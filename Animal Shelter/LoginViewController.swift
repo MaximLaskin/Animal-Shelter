@@ -12,13 +12,12 @@ class LoginViewController: UIViewController {
     @IBOutlet var loginTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    @IBOutlet var forgotLoginButton: UIButton!
-    @IBOutlet var forgotPassowordButton: UIButton!
     
-    let currentUser = User.getUsers().shuffled()
+    private let currentUser = User.getUsers().shuffled()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+ 
      
     }
     
@@ -32,11 +31,17 @@ class LoginViewController: UIViewController {
     // MARK: - IBActions
     
     @IBAction func forgotUsernameButtonPressed() {
-        showAlert(with: "👋 No worries", and: "Your login is \(currentUser.first?.username ?? "Sam")")
+        showAlert(
+            with: "👋 No worries",
+            and: "Your login is \(currentUser.first?.username ?? "Sam")"
+        )
     }
     
     @IBAction func forgoPasswordButtonPressed() {
-        showAlert(with: "🔐 Password", and: "Password for user \(currentUser.first?.username ?? "Sam") is \(currentUser.first?.password ?? "3333")")
+        showAlert(
+            with: "🔐 Password",
+            and: "Password for user \(currentUser.first?.username ?? "Sam") is \(currentUser.first?.password ?? "3333")"
+        )
     }
     
     // MARK: - Navigation
