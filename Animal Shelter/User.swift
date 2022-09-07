@@ -13,14 +13,23 @@ struct User {
     let password: String
     let name: String
     let surname: String
-    
-    static func getUser() -> User {
-        User(
-            username: "maxlex",
-            password: "pass1",
-            name: "Max",
-            surname: "Lex"
-        )
-    }
 }
 
+    extension User {
+        
+        static func getUsers() -> [User] {
+            var users = [User]()
+            
+            for user in 0..<randomNames.count {
+                people.append(
+                    Person(
+                        name: randomNames[id],
+                        surname: randomSurnames[id],
+                        phone: randomPhones[id],
+                        email: randomMails[id]
+                    )
+                )
+            }
+            return users
+        }
+    }
