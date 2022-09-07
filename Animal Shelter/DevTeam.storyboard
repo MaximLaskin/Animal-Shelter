@@ -11,7 +11,7 @@
         <!--Dev Team View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="DevTeam" id="Y6W-OH-hqX" customClass="DevTeamViewController" customModule="Animal_Shelter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DevTeam" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="DevTeamViewController" customModule="Animal_Shelter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,6 +48,10 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="firstLabel" destination="n2K-Sa-NPg" id="hMP-cK-CVG"/>
+                        <outlet property="secondLabel" destination="etH-Nj-VFb" id="aEv-qk-Ixh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
