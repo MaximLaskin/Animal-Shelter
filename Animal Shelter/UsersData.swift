@@ -13,7 +13,7 @@ class DataManager
         "Max", "Pavel", "Tanya", "Sam", "Leo"
     ]
     
-    let suranmes = [
+    let surnames = [
         "Einstein", "McLain", "Travolta", "Jobs", "Cook"
     ]
     

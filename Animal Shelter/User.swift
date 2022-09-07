@@ -28,7 +28,7 @@ extension User {
                     username: usersData.usernames[id],
                     password: usersData.password[id],
                     name: usersData.names[id],
-                    surname: usersData.suranmes[id]
+                    surname: usersData.surnames[id]
                 )
             )
         }
