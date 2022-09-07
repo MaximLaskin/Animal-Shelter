@@ -91,6 +91,12 @@
                                     <constraint firstAttribute="height" constant="100" id="n0Z-ci-ISp"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="version" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVC-Cv-9zG">
+                                <rect key="frame" x="167" y="632.5" width="41" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -110,12 +116,15 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="lYG-O8-FDo" secondAttribute="bottom" constant="20" id="fkd-Ux-MER"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZR1-gs-Eqs" secondAttribute="trailing" constant="88" id="ldL-AP-7uI"/>
                             <constraint firstItem="ZR1-gs-Eqs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="35" id="lwd-3J-S9c"/>
+                            <constraint firstItem="cVC-Cv-9zG" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="nXh-vJ-r9I"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PbF-cD-XaV" secondAttribute="trailing" constant="20" id="vzG-4Q-21b"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="cVC-Cv-9zG" secondAttribute="bottom" constant="20" id="x1V-WV-dHj"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="loginTextField" destination="gJm-gn-eja" id="t9A-EE-Qcx"/>
                         <outlet property="passwordTextField" destination="OPy-1y-Ux6" id="M5G-D8-CjY"/>
+                        <outlet property="versionLabel" destination="cVC-Cv-9zG" id="dP5-cK-VP8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

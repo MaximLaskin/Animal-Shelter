@@ -11,14 +11,17 @@ class LoginViewController: UIViewController {
     
     @IBOutlet var loginTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
-    
+    @IBOutlet var versionLabel: UILabel!
     
     private let currentUser = User.getUsers().shuffled()
+    private let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
-     
+        
+        versionLabel.text = "version \(appVersion ?? "nil")"
+        versionLabel.alpha = 0.4
     }
     
     
@@ -52,10 +55,10 @@ class LoginViewController: UIViewController {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if loginTextField.text == "User" && passwordTextField.text == "Password"  {
+        if loginTextField.text == currentUser.first?.username ?? "Sam" && passwordTextField.text == currentUser.first?.password ?? "3333"  {
             return true
         } else {
-            showAlert(with: "Wrong Credentials", and: "Please check you login and password")
+            showAlert(with: "🥺 Wrong Credentials", and: "Please check login and password")
             return false
         }
     }
