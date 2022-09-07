@@ -25,14 +25,14 @@ class LoginViewController: UIViewController {
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if loginTextField.text == "User" && passwordTextField.text == "Password"  {
             return true
-        }else {
+        } else {
             showAlert(with: "Wrong Credentials", and: "Please check you login and password")
             return false
         }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super .touchesBegan(touches, with: event)
+        super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
     
@@ -51,7 +51,7 @@ class LoginViewController: UIViewController {
 
 
 // MARK: - AlertController
-//
+
 extension LoginViewController {
     private func showAlert(with title: String, and massage: String) {
         let alert = UIAlertController(
