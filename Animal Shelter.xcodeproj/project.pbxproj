@@ -13,6 +13,7 @@
 		4346F05B28C78B47004087E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4346F05928C78B47004087E2 /* Main.storyboard */; };
 		4346F05D28C78B49004087E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4346F05C28C78B49004087E2 /* Assets.xcassets */; };
 		4346F06028C78B49004087E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4346F05E28C78B49004087E2 /* LaunchScreen.storyboard */; };
+		CDD8457B28C8B50900F5E166 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD8457A28C8B50900F5E166 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4346F05C28C78B49004087E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4346F05F28C78B49004087E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4346F06128C78B49004087E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDD8457A28C8B50900F5E166 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				4346F05528C78B47004087E2 /* SceneDelegate.swift */,
 				4346F05728C78B47004087E2 /* ViewController.swift */,
 				4346F05928C78B47004087E2 /* Main.storyboard */,
+				CDD8457A28C8B50900F5E166 /* Login.storyboard */,
 				4346F05C28C78B49004087E2 /* Assets.xcassets */,
 				4346F05E28C78B49004087E2 /* LaunchScreen.storyboard */,
 				4346F06128C78B49004087E2 /* Info.plist */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD8457B28C8B50900F5E166 /* Login.storyboard in Resources */,
 				4346F06028C78B49004087E2 /* LaunchScreen.storyboard in Resources */,
 				4346F05D28C78B49004087E2 /* Assets.xcassets in Resources */,
 				4346F05B28C78B47004087E2 /* Main.storyboard in Resources */,
