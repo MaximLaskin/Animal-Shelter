@@ -25,6 +25,9 @@
                                         <state key="normal" title="Forgot username">
                                             <color key="titleColor" red="0.094117648900000003" green="0.02745098248" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="forgotUsernameButtonPressed" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2gP-Km-KXX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sc-nh-sNz">
                                         <rect key="frame" x="154" y="0.0" width="102" height="28"/>
@@ -33,6 +36,9 @@
                                         <state key="normal" title="Forgot password">
                                             <color key="titleColor" red="0.094117648900000003" green="0.02745098248" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="forgoPasswordButtonPressed" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wLq-pP-knk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -106,7 +112,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="forgotLoginButton" destination="yUs-4R-QM8" id="ebJ-2c-qpH"/>
                         <outlet property="forgotPassowordButton" destination="0Sc-nh-sNz" id="6Hh-sU-oa4"/>
                         <outlet property="loginTextField" destination="gJm-gn-eja" id="t9A-EE-Qcx"/>
                         <outlet property="passwordTextField" destination="OPy-1y-Ux6" id="M5G-D8-CjY"/>

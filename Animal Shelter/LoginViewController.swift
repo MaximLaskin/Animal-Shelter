@@ -15,13 +15,36 @@ class LoginViewController: UIViewController {
     @IBOutlet var forgotLoginButton: UIButton!
     @IBOutlet var forgotPassowordButton: UIButton!
     
+    let currentUser = User.getUsers().shuffled()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let allUsers = User.getUsers()
-        print(allUsers)
-
+     
     }
     
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
+    
+    // MARK: - IBActions
+    
+    @IBAction func forgotUsernameButtonPressed() {
+        showAlert(with: "👋 No worries", and: "Your login is \(currentUser.first?.username ?? "Sam")")
+    }
+    
+    @IBAction func forgoPasswordButtonPressed() {
+        showAlert(with: "🔐 Password", and: "Password for user \(currentUser.first?.username ?? "Sam") is \(currentUser.first?.password ?? "3333")")
+    }
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if loginTextField.text == "User" && passwordTextField.text == "Password"  {
@@ -32,26 +55,10 @@ class LoginViewController: UIViewController {
         }
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        view.endEditing(true)
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 
-// MARK: - AlertController
+    // MARK: - AlertController
 
 extension LoginViewController {
     private func showAlert(with title: String, and massage: String) {
@@ -60,7 +67,7 @@ extension LoginViewController {
             message: massage,
             preferredStyle: .alert)
 
-        let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
+        let okAction = UIAlertAction(title: "Done", style: .default) { _ in
             self.passwordTextField.text = ""
         }
 
