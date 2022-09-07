@@ -7,29 +7,31 @@
 
 import Foundation
 
+let usersData = DataManager()
 
 struct User {
     let username: String
     let password: String
+    
     let name: String
     let surname: String
 }
 
-    extension User {
+extension User {
+    
+    static func getUsers() -> [User] {
+        var users = [User]()
         
-        static func getUsers() -> [User] {
-            var users = [User]()
-            
-            for user in 0..<randomNames.count {
-                people.append(
-                    Person(
-                        name: randomNames[id],
-                        surname: randomSurnames[id],
-                        phone: randomPhones[id],
-                        email: randomMails[id]
-                    )
+        for id in 0..<usersData.names.count {
+            users.append(
+                User(
+                    username: usersData.usernames[id],
+                    password: usersData.password[id],
+                    name: usersData.names[id],
+                    surname: usersData.suranmes[id]
                 )
-            }
-            return users
+            )
         }
+        return users
     }
+}

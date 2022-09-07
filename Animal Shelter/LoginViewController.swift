@@ -17,7 +17,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let allUsers = User.getUsers()
+        print(allUsers)
 
     }
     
