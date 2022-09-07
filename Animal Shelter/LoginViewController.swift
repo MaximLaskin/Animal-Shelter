@@ -8,11 +8,32 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
+    @IBOutlet var loginTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+    
+    @IBOutlet var forgotLoginButton: UIButton!
+    @IBOutlet var forgotPassowordButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
 
+    }
+    
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if loginTextField.text == "User" && passwordTextField.text == "Password"  {
+            return true
+        }else {
+            showAlert(with: "Wrong Credentials", and: "Please check you login and password")
+            return false
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
 
@@ -31,18 +52,18 @@ class LoginViewController: UIViewController {
 
 // MARK: - AlertController
 //
-//extension LoginViewController {
-//    private func showAlert(with title: String, and massage: String) {
-//        let alert = UIAlertController(
-//            title: title,
-//            message: massage,
-//            preferredStyle: .alert)
-//
-//        let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
-//            self.passwordTextField.text = ""
-//        }
-//
-//        alert.addAction(okAction)
-//        present(alert, animated: true)
-//    }
-//}
+extension LoginViewController {
+    private func showAlert(with title: String, and massage: String) {
+        let alert = UIAlertController(
+            title: title,
+            message: massage,
+            preferredStyle: .alert)
+
+        let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
+            self.passwordTextField.text = ""
+        }
+
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+}
