@@ -21,6 +21,8 @@ final class AnimalDetailsViewController: UIViewController {
 
     @IBOutlet weak var shelterButton: UIButton!
 
+    var animal: Animal!
+
 // MARK: - Life cycle
 
     override func viewDidLoad() {
