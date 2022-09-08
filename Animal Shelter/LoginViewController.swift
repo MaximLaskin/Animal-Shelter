@@ -13,14 +13,14 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var versionLabel: UILabel!
     
-    private let currentUser = User.getUsers().shuffled()
+    private let currentUser = User.getUsers().shuffled().first
     private let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        versionLabel.text = "version \(appVersion ?? "nil")"
+        versionLabel.text = "version \(appVersion ?? "")"
         versionLabel.alpha = 0.4
         
         loginTextField.setupLeftImage(imageName: "User")
@@ -39,16 +39,17 @@ class LoginViewController: UIViewController {
     @IBAction func forgotUsernameButtonPressed() {
         showAlert(
             with: "👋 No worries",
-            and: "Your login is \(currentUser.first?.username ?? "Sam")"
+            and: "Your login is \(currentUser?.username ?? "")"
         )
     }
     
     @IBAction func forgoPasswordButtonPressed() {
         showAlert(
             with: "🔐 Password",
-            and: "Password for user \(currentUser.first?.username ?? "Sam") is \(currentUser.first?.password ?? "3333")"
+            and: "Password for user \(currentUser?.username ?? "") is \(currentUser?.password ?? "")"
         )
     }
+    
     
     // MARK: - Navigation
     
@@ -58,7 +59,7 @@ class LoginViewController: UIViewController {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if loginTextField.text == currentUser.first?.username ?? "Sam" && passwordTextField.text == currentUser.first?.password ?? "3333"  {
+        if loginTextField.text == currentUser?.username ?? "Sam" && passwordTextField.text == currentUser?.password ?? "3333"  {
             return true
         } else {
             showAlert(with: "🥺 Wrong Credentials", and: "Please check login and password")

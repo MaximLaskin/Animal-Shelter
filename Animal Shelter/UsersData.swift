@@ -18,10 +18,10 @@ class DataManager
     ]
     
     let usernames = [
-        "Max", "Pavel", "Tanya", "Sam", "Leo"
+        "Leo", "Pavel", "Max", "Tanya", "Sam"
     ]
     
-    let password = [
+    let passwords = [
         "0000", "1111", "2222", "3333", "4444"
     ]
 }

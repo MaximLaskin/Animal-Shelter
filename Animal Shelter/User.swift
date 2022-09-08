@@ -10,11 +10,10 @@ import Foundation
 let usersData = DataManager()
 
 struct User {
-    let username: String
-    let password: String
-    
     let name: String
     let surname: String
+    let username: String
+    let password: String
 }
 
 extension User {
@@ -25,10 +24,10 @@ extension User {
         for id in 0..<usersData.names.count {
             users.append(
                 User(
-                    username: usersData.usernames[id],
-                    password: usersData.password[id],
-                    name: usersData.names[id],
-                    surname: usersData.surnames[id]
+                    name: usersData.usernames[id],
+                    surname: usersData.surnames[id],
+                    username: usersData.names[id],
+                    password: usersData.passwords[id]
                 )
             )
         }
