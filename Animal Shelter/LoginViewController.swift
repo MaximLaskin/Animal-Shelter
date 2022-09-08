@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        versionLabel.text = "version \(appVersion ?? "")"
+        versionLabel.text = "version \(appVersion ?? "1.0")"
         versionLabel.alpha = 0.4
         
         loginTextField.setupLeftImage(imageName: "User")
@@ -41,6 +41,8 @@ class LoginViewController: UIViewController {
             with: "👋 No worries",
             and: "Your login is \(currentUser?.username ?? "")"
         )
+        
+        loginTextField.text = currentUser?.username ?? ""
     }
     
     @IBAction func forgoPasswordButtonPressed() {
@@ -93,14 +95,14 @@ extension LoginViewController {
 
 extension UITextField {
 
-    func setupLeftImage(imageName:String){
+    func setupLeftImage(imageName: String) {
        let imageView = UIImageView(frame: CGRect(x: 10, y: 10, width: 20, height: 20))
        imageView.image = UIImage(named: imageName)
        let imageContainerView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: 40))
        imageContainerView.addSubview(imageView)
        leftView = imageContainerView
        leftViewMode = .always
-       self.tintColor = .lightGray
+       self.tintColor = .darkGray
      }
 
   }
