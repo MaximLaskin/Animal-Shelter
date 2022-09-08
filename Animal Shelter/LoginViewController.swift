@@ -22,6 +22,9 @@ class LoginViewController: UIViewController {
         
         versionLabel.text = "version \(appVersion ?? "nil")"
         versionLabel.alpha = 0.4
+        
+        loginTextField.setupLeftImage(imageName: "User")
+        passwordTextField.setupLeftImage(imageName: "Lock")
     }
     
     
@@ -83,3 +86,20 @@ extension LoginViewController {
         present(alert, animated: true)
     }
 }
+
+
+    //MARK: - Set Image on left of text fields
+
+extension UITextField {
+
+    func setupLeftImage(imageName:String){
+       let imageView = UIImageView(frame: CGRect(x: 10, y: 10, width: 20, height: 20))
+       imageView.image = UIImage(named: imageName)
+       let imageContainerView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: 40))
+       imageContainerView.addSubview(imageView)
+       leftView = imageContainerView
+       leftViewMode = .always
+       self.tintColor = .lightGray
+     }
+
+  }
