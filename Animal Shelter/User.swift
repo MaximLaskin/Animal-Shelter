@@ -17,7 +17,6 @@ struct User {
 }
 
 extension User {
-    
     static func getUsers() -> [User] {
         var users = [User]()
         
