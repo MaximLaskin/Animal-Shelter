@@ -39,6 +39,10 @@ class AnimalListViewController: UITableViewController {
         let animal = animals[indexPath.row]
         performSegue(withIdentifier: "showDetail", sender: animal)
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        60
+    }
 
     // MARK: - Navigation
 
