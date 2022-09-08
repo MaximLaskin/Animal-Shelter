@@ -52,12 +52,18 @@ class LoginViewController: UIViewController {
         )
     }
     
+    @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
+        passwordTextField.text = ""
+        loginTextField.text = ""
+    }
+    
     
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //    guard let user = currentUser else { return }
+        
+    //   let destinationVC = segue.destination as! SecondViewController
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
@@ -96,9 +102,13 @@ extension LoginViewController {
 extension UITextField {
 
     func setupLeftImage(imageName: String) {
-       let imageView = UIImageView(frame: CGRect(x: 10, y: 10, width: 20, height: 20))
+       let imageView = UIImageView(
+        frame: CGRect(x: 10, y: 10, width: 20, height: 20)
+       )
        imageView.image = UIImage(named: imageName)
-       let imageContainerView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: 40))
+       let imageContainerView: UIView = UIView(
+        frame: CGRect(x: 0, y: 0, width: 30, height: 40)
+       )
        imageContainerView.addSubview(imageView)
        leftView = imageContainerView
        leftViewMode = .always
