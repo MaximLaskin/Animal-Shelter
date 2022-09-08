@@ -47,7 +47,7 @@ class AnimalListViewController: UITableViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let detailVC = segue.destination as? DetailViewController else { return }
+        guard let detailVC = segue.destination as? AnimalDetailsViewController else { return }
         detailVC.animal = sender as? Animal
     }
 
