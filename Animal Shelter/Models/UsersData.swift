@@ -34,7 +34,7 @@ class DevsDataManager {
     ]
     
     let devSurnames = [
-        "NoSurname", "S", "Hidden", "Kafarov", "Anonim"
+        "Genius", "S.", "Jobs", "Kafarov", "Anonim"
     ]
     
     let devTelegrams = [
