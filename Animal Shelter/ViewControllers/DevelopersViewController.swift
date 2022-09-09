@@ -37,7 +37,7 @@ class DevelopersViewController: UIViewController {
     private func showDev(with index: Int) {
         
         if currentDeveloperIndex == currentDev.count - 1 {
-            nextDevButton.isEnabled = false
+            nextDevButton.isHidden = true
             goBackButton.isHidden = false
         }
         
