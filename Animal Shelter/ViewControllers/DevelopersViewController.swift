@@ -14,46 +14,37 @@ class DevelopersViewController: UIViewController {
     @IBOutlet var devDescriptionText: UILabel!
     @IBOutlet var devTelegramText: UILabel!
     @IBOutlet var nextDevButton: UIButton!
+    @IBOutlet var goBackButton: UIButton!
     
-    
+    private var currentDeveloperIndex = 0
     private let currentDev = Developer.getDevelopers()
-    private var currentDeveloperIndex = 1
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         devPhotoImage.layer.cornerRadius = 10
-        
-        devPhotoImage.image = currentDev[0].photo
-        devFullNameText.text = currentDev[0].fullName
-        devTelegramText.text = currentDev[0].telegram
-        devDescriptionText.text = currentDev[0].telegram
-        devDescriptionText.text = currentDev[0].description
+        showDev(with: currentDeveloperIndex)
     }
     
     @IBAction func nextButtonPressed() {
-
-        if currentDeveloperIndex < currentDev.count - 1 {
-            devPhotoImage.image = currentDev[currentDeveloperIndex].photo
-            devFullNameText.text = currentDev[currentDeveloperIndex].fullName
-            devTelegramText.text = currentDev[currentDeveloperIndex].telegram
-            devDescriptionText.text = currentDev[currentDeveloperIndex].telegram
-            devDescriptionText.text = currentDev[currentDeveloperIndex].description
-            
-            currentDeveloperIndex += 1
-            print("currentDevindex = \(currentDeveloperIndex)")
-            print("current arrayIndex = \(currentDev.count)")
-            
-        } else {
-            currentDeveloperIndex = 0
-            nextDevButton.titleLabel?.text = "Start Over?"
-            devPhotoImage.image = currentDev.last?.photo
-            devFullNameText.text = currentDev.last?.fullName
-            devTelegramText.text = currentDev.last?.telegram
-            devDescriptionText.text = currentDev.last?.telegram
-            devDescriptionText.text = currentDev.last?.description
-    
-        }
         
+        if currentDeveloperIndex < currentDev.count - 1 {
+            currentDeveloperIndex += 1
+            showDev(with: currentDeveloperIndex)
+        }
     }
     
+    private func showDev(with index: Int) {
+        
+        if currentDeveloperIndex == currentDev.count - 1 {
+            nextDevButton.isEnabled = false
+            goBackButton.isHidden = false
+        }
+        
+        devPhotoImage.image = currentDev[index].photo
+        devFullNameText.text = currentDev[index].fullName
+        devTelegramText.text = currentDev[index].telegram
+        devDescriptionText.text = currentDev[index].telegram
+        devDescriptionText.text = currentDev[index].description
+    }
 }

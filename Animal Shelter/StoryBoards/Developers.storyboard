@@ -35,9 +35,8 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1F-3Z-Rgo">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1F-3Z-Rgo">
                                 <rect key="frame" x="134.5" y="575" width="106" height="37"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Login"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next Dev">
@@ -63,6 +62,18 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRB-ed-PSn">
+                                <rect key="frame" x="138.5" y="575" width="98" height="37"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Login"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go back">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
+                                    <color key="baseBackgroundColor" red="0.094117648900000003" green="0.02745098248" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonPressed" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Sws-b3-q7j"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,9 +87,11 @@
                             <constraint firstItem="OBN-CA-zaQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="YBg-uS-5bg"/>
                             <constraint firstItem="i3g-gB-lJZ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="60" id="amT-iI-suq"/>
                             <constraint firstItem="mKx-xu-tIk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="dFV-LA-lXI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="tRB-ed-PSn" secondAttribute="bottom" constant="55" id="dKi-Hq-kJ7"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="H1F-3Z-Rgo" secondAttribute="bottom" constant="55" id="gX9-q4-Nh2"/>
                             <constraint firstItem="OBN-CA-zaQ" firstAttribute="top" secondItem="mKx-xu-tIk" secondAttribute="bottom" constant="30" id="gjj-sG-Gf6"/>
                             <constraint firstItem="H1F-3Z-Rgo" firstAttribute="top" secondItem="4DB-HC-hnO" secondAttribute="bottom" constant="30" id="len-Nq-l3l"/>
+                            <constraint firstItem="tRB-ed-PSn" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="xN0-95-xXu"/>
                         </constraints>
                     </view>
                     <connections>
@@ -86,6 +99,7 @@
                         <outlet property="devFullNameText" destination="mKx-xu-tIk" id="FNw-jH-o6U"/>
                         <outlet property="devPhotoImage" destination="i3g-gB-lJZ" id="V6x-8G-Gun"/>
                         <outlet property="devTelegramText" destination="Vwf-fz-Qs2" id="sJK-rE-ZG7"/>
+                        <outlet property="goBackButton" destination="tRB-ed-PSn" id="cix-hh-aTH"/>
                         <outlet property="nextDevButton" destination="H1F-3Z-Rgo" id="FDI-n0-r7A"/>
                     </connections>
                 </viewController>
