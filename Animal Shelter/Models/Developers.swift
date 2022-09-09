@@ -26,6 +26,7 @@ struct Developer {
 extension Developer {
     static func getDevelopers() -> [Developer] {
         var developers = [Developer]()
+        let defaultimg = UIImage(named: "dog_login")!
         
         for id in 0..<devsData.devNames.count {
             developers.append(
@@ -33,7 +34,7 @@ extension Developer {
                     name: devsData.devNames[id],
                     surname: devsData.devSurnames[id],
                     telegram: devsData.devTelegrams[id],
-                    photo: devsData.devPhotos[id]!,
+                    photo: devsData.devPhotos[id] ?? defaultimg,
                     description: devsData.devDescriptions[id]
                 )
             )
