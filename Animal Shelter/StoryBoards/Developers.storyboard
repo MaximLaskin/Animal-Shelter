@@ -44,6 +44,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
                                     <color key="baseBackgroundColor" red="0.094117648900000003" green="0.02745098248" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonPressed" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CCX-Na-pi8"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="4DB-HC-hnO">
                                 <rect key="frame" x="129.5" y="521" width="116" height="24"/>
@@ -83,6 +86,7 @@
                         <outlet property="devFullNameText" destination="mKx-xu-tIk" id="FNw-jH-o6U"/>
                         <outlet property="devPhotoImage" destination="i3g-gB-lJZ" id="V6x-8G-Gun"/>
                         <outlet property="devTelegramText" destination="Vwf-fz-Qs2" id="sJK-rE-ZG7"/>
+                        <outlet property="nextDevButton" destination="H1F-3Z-Rgo" id="FDI-n0-r7A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

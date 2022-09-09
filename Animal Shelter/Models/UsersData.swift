@@ -49,7 +49,7 @@ class DevsDataManager {
         "Teamlead, организовал работу, собрал команду, придумал Xcode",
         "Запилил много экранов, спец по tableView, мастер сегвеев",
         "Придумала идею приложения, победила Git, написала 1000 строк кода",
-        "Senior iOS Developer, Vapor, NodeJS, Git, Realm, MySql",
+        "Senior iOS Developer. Vapor, NodeJS, Git, Realm, MySql и еще много всего нужно учить",
         "Рисовал картинки, делал кнопку красивой, вызывал алерты"
     ]
 }
