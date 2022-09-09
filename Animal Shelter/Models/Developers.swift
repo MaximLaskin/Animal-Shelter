@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+let devsData = DevsDataManager()
+
 struct Developer {
     let name: String
     let surname: String
@@ -25,14 +27,14 @@ extension Developer {
     static func getDevelopers() -> [Developer] {
         var developers = [Developer]()
         
-        for id in 0..<usersData.names.count {
+        for id in 0..<devsData.devNames.count {
             developers.append(
                 Developer(
-                    name: <#T##String#>,
-                    surname: <#T##String#>,
-                    telegram: <#T##String#>,
-                    photo: <#T##UIImage#>,
-                    description: <#T##String#>
+                    name: devsData.devNames[id],
+                    surname: devsData.devSurnames[id],
+                    telegram: devsData.devTelegrams[id],
+                    photo: devsData.devPhotos[id],
+                    description: devsData.devDescriptions[id]
                 )
             )
         }
