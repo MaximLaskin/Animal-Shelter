@@ -17,6 +17,10 @@ final class AnimalDetailsViewController: UIViewController {
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
 
+    @IBOutlet weak var weightView: UIView!
+    @IBOutlet weak var ageView: UIView!
+    @IBOutlet weak var sexView: UIView!
+
     @IBOutlet weak var descriptionLabel: UILabel!
 
     @IBOutlet weak var shelterButton: UIButton!
@@ -27,6 +31,17 @@ final class AnimalDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+    }
+
+    private func setupView() {
+
+        view.backgroundColor = .white
+
+        [weightView, sexView, ageView].forEach{$0.layer.cornerRadius = 10}
+        [weightView, sexView, ageView].forEach{$0?.backgroundColor = .clear}
+        [weightView, sexView, ageView].forEach{$0.layer.borderWidth = 1}
+        [weightView, sexView, ageView].forEach{$0.layer.borderColor = UIColor.gray.cgColor}
 
     }
 }
