@@ -1,0 +1,50 @@
+//
+//  DevelopersViewController.swift
+//  Animal Shelter
+//
+//  Created by Leon Fridman on 9/9/22.
+//
+
+import UIKit
+
+class DevelopersViewController: UIViewController {
+    
+    @IBOutlet var devFullNameText: UILabel!
+    @IBOutlet var devPhotoImage: UIImageView!
+    @IBOutlet var devDescriptionText: UILabel!
+    @IBOutlet var devTelegramText: UILabel!
+    @IBOutlet var nextDevButton: UIButton!
+    @IBOutlet var goBackButton: UIButton!
+    
+    private var currentDeveloperIndex = 0
+    private let currentDev = Developer.getDevelopers()
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        devPhotoImage.layer.cornerRadius = 10
+        showDev(with: currentDeveloperIndex)
+    }
+    
+    @IBAction func nextButtonPressed() {
+        
+        if currentDeveloperIndex < currentDev.count - 1 {
+            currentDeveloperIndex += 1
+            showDev(with: currentDeveloperIndex)
+        }
+    }
+    
+    private func showDev(with index: Int) {
+        
+        if currentDeveloperIndex == currentDev.count - 1 {
+            nextDevButton.isEnabled = false
+            goBackButton.isHidden = false
+        }
+        
+        devPhotoImage.image = currentDev[index].photo
+        devFullNameText.text = currentDev[index].fullName
+        devTelegramText.text = currentDev[index].telegram
+        devDescriptionText.text = currentDev[index].telegram
+        devDescriptionText.text = currentDev[index].description
+    }
+}

@@ -7,7 +7,7 @@
 
 import Foundation
 
-let usersData = DataManager()
+let usersData = UsersDataManager()
 
 struct User {
     let name: String

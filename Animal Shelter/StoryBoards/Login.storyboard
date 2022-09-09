@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -52,9 +51,6 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
                                     <color key="baseBackgroundColor" red="0.094117648900000003" green="0.02745098248" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <segue destination="hRY-L8-cM0" kind="presentation" modalPresentationStyle="fullScreen" id="5oG-j7-b8r"/>
-                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="83a-9w-KBg">
                                 <rect key="frame" x="40" y="254" width="310" height="88"/>
@@ -137,29 +133,10 @@
             </objects>
             <point key="canvasLocation" x="20" y="94.902548725637189"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="xMe-aw-uxl">
-            <objects>
-                <viewController id="hRY-L8-cM0" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0WX-EV-3RN">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="M9P-fe-foL"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="wJp-2i-qSc"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YcP-tR-T06" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="743" y="95"/>
-        </scene>
     </scenes>
     <resources>
         <image name="applogo" width="238" height="100"/>
         <image name="cat_login" width="564" height="564"/>
         <image name="dog_login" width="564" height="564"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
