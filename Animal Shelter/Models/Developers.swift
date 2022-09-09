@@ -33,7 +33,7 @@ extension Developer {
                     name: devsData.devNames[id],
                     surname: devsData.devSurnames[id],
                     telegram: devsData.devTelegrams[id],
-                    photo: devsData.devPhotos[id],
+                    photo: devsData.devPhotos[id]!,
                     description: devsData.devDescriptions[id]
                 )
             )
