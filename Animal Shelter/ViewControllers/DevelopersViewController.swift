@@ -7,25 +7,33 @@
 
 import UIKit
 
-class DevelopersViewController: UIViewController {
+final class DevelopersViewController: UIViewController {
+
+    // MARK: - IBOutlets
     
     @IBOutlet var devFullNameText: UILabel!
     @IBOutlet var devPhotoImage: UIImageView!
     @IBOutlet var devDescriptionText: UILabel!
     @IBOutlet var devTelegramText: UILabel!
+    
     @IBOutlet var nextDevButton: UIButton!
     @IBOutlet var goBackButton: UIButton!
+
+    // MARK: - Private properties
     
     private var currentDeveloperIndex = 0
     private let currentDev = Developer.getDevelopers()
     
-    
+    // MARK: - Life cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         devPhotoImage.layer.cornerRadius = 10
         showDev(with: currentDeveloperIndex)
     }
-    
+
+    // MARK: - Actions
+
     @IBAction func nextButtonPressed() {
         
         if currentDeveloperIndex < currentDev.count - 1 {

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AnimalListViewController: UITableViewController {
+final class AnimalListViewController: UITableViewController {
 
     var animals = [Animal]()
     
@@ -50,5 +50,4 @@ class AnimalListViewController: UITableViewController {
         guard let detailVC = segue.destination as? AnimalDetailsViewController else { return }
         detailVC.animal = sender as? Animal
     }
-
 }

@@ -34,6 +34,8 @@ final class AnimalDetailsViewController: UIViewController {
         setupView()
     }
 
+    // MARK: - Setup Views
+
     private func setupView() {
 
         view.backgroundColor = .white
@@ -42,6 +44,5 @@ final class AnimalDetailsViewController: UIViewController {
         [weightView, sexView, ageView].forEach{$0?.backgroundColor = .clear}
         [weightView, sexView, ageView].forEach{$0.layer.borderWidth = 1}
         [weightView, sexView, ageView].forEach{$0.layer.borderColor = UIColor.gray.cgColor}
-
     }
 }
