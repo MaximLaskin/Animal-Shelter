@@ -23,6 +23,7 @@ final class AnimalDetailsViewController: UIViewController {
 
     @IBOutlet weak var descriptionLabel: UILabel!
 
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var shelterButton: UIButton!
 
     var animal: Animal!
@@ -35,6 +36,17 @@ final class AnimalDetailsViewController: UIViewController {
     }
 
     // MARK: - Setup Views
+
+    private func setupLabelsValue() {
+
+        imageView.image = UIImage(named: animal.nameAndBreed)
+
+        sexLabel.text = animal.sex
+        ageLabel.text = animal.age
+        weightLabel.text = animal.weight
+        nameAndBreedLabel.text = animal.nameAndBreed
+        descriptionLabel.text = animal.description
+    }
 
     private func setupView() {
 

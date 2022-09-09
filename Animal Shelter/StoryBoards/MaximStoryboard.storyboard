@@ -166,6 +166,7 @@
                         <outlet property="ageLabel" destination="aDW-22-qoD" id="kJz-yg-Ndf"/>
                         <outlet property="ageView" destination="7SX-Vm-1mp" id="Deo-FR-J0Y"/>
                         <outlet property="descriptionLabel" destination="8Oq-kv-9Ia" id="u46-po-fHh"/>
+                        <outlet property="imageView" destination="RHH-c9-1fC" id="s8g-dJ-Ixi"/>
                         <outlet property="nameAndBreedLabel" destination="07E-yM-awt" id="ukV-Gg-gjm"/>
                         <outlet property="sexLabel" destination="Qh9-tp-OP9" id="ald-rn-bxy"/>
                         <outlet property="sexView" destination="hS9-eJ-JhO" id="Hhi-QJ-QJn"/>
