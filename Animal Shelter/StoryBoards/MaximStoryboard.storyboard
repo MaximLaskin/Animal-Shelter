@@ -134,7 +134,7 @@
                                     <constraint firstAttribute="height" constant="211.5" id="7u1-Yl-aah"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxT-lI-O7S">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxT-lI-O7S">
                                 <rect key="frame" x="147.5" y="809" width="119.5" height="37"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -150,7 +150,6 @@
                         <constraints>
                             <constraint firstItem="Idf-Qa-LfW" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="Ffp-h0-ONj"/>
                             <constraint firstItem="MxT-lI-O7S" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="JZM-YL-YhK"/>
-                            <constraint firstAttribute="bottom" secondItem="MxT-lI-O7S" secondAttribute="bottom" constant="50" id="K1Z-Fe-MaI"/>
                             <constraint firstItem="RHH-c9-1fC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="KWm-j3-EIW"/>
                             <constraint firstItem="RHH-c9-1fC" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.838164" id="Yom-e6-gJu"/>
                             <constraint firstItem="RHH-c9-1fC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="cFk-W2-aNi"/>
