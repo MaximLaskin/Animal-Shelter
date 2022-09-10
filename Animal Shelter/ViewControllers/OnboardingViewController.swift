@@ -24,7 +24,8 @@ class OnboardingViewController: UIViewController {
     @IBOutlet var continueButton: UIButton!
     
     // MARK: - Private Properties
-    private var stackIndex = 0 // index of current stack
+    private var stackIndex: Float = 0.0 // index of current stack
+    private var stackTotal: Float = 3.0 // count of stack Views
     var userName = ""
     
     
@@ -36,25 +37,30 @@ class OnboardingViewController: UIViewController {
         firstStackView.isHidden = false
         firstLabel.text = "приветствуем тебя \(userName) 😎"
         secondLabel.text = "Мы рады что принял такое важное решение - как усыновление животного 🥰"
-        thirdLabel.text = "bla bla bla bla"
+        thirdLabel.text = "Надеемся что с нашей помощью, ты найдешь друга, ведь он уже ждет тебя 🐶❤️🐱"
     }
     
     // MARK: - IBActions
  
     @IBAction func continueButtonPressed(_ sender: Any) {
         continueButton.setTitle("Continue", for: .normal)
+        
         if firstStackView.isHidden == false {
+            stackIndex += 0.5
+            progressBar.setProgress(stackIndex, animated: true)
+            progressBar.progress = Float(0.5)
             firstStackView.isHidden = true
             secondStackView.isHidden = false
             thirdStackView.isHidden = true
         } else if secondStackView.isHidden == false {
+            stackIndex += 0.5
+            progressBar.progress = Float(0.5)
+            progressBar.setProgress(stackIndex, animated: true)
             thirdStackView.isHidden = false
             firstStackView.isHidden = true
             secondStackView.isHidden = true
         } else if thirdStackView.isHidden == false {
             performSegue(withIdentifier: "nextScreen", sender: nil)
-            // бла бла бла
-
         }
     }
     
@@ -74,6 +80,9 @@ extension OnboardingViewController {
         for stackView in [firstStackView, secondStackView, thirdStackView] {
             stackView?.isHidden = true
         }
- 
+        let totalProgress = Float(stackIndex) / Float(stackTotal)
+        
+        // set progress for progressBar
+        progressBar.setProgress(totalProgress, animated: true)
     }
 }
