@@ -39,9 +39,7 @@ class OnboardingViewController: UIViewController {
         thirdLabel.text = "bla bla bla bla"
     }
     
-    
     // MARK: - IBActions
-    
  
     @IBAction func continueButtonPressed(_ sender: Any) {
         continueButton.setTitle("Continue", for: .normal)
@@ -55,8 +53,8 @@ class OnboardingViewController: UIViewController {
             secondStackView.isHidden = true
         } else if thirdStackView.isHidden == false {
             performSegue(withIdentifier: "nextScreen", sender: nil)
-            // мйукорй
-            // йкдптйцкжпл т    
+            // бла бла бла
+
         }
     }
     
