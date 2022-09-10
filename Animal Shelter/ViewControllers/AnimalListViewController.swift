@@ -13,7 +13,7 @@ final class AnimalListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 
     // MARK: - Table view data source
@@ -28,7 +28,7 @@ final class AnimalListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AnimalTableViewCell
         
         cell.animalImage.image = UIImage(named: animal.nameAndBreed)
-        cell.animalImage.layer.cornerRadius = tableView.rowHeight / 2
+        cell.animalImage.layer.cornerRadius = 50
         cell.animalImage.clipsToBounds = true
         cell.animalNameAge.text = "\(animal.name), \(animal.age)"
         cell.animalBreed.text = animal.breed
@@ -43,7 +43,7 @@ final class AnimalListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
+        110
     }
 
     // MARK: - Navigation
