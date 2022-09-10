@@ -73,10 +73,23 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Найди своего друга!" id="now-Oj-iQl"/>
+                    <connections>
+                        <segue destination="kbr-77-pE7" kind="show" identifier="showDetail" id="Qp7-MJ-EKP"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXr-va-TjF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="584" y="63"/>
+        </scene>
+        <!--MaximStoryboard-->
+        <scene sceneID="pXw-R4-euV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MaximStoryboard" id="kbr-77-pE7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MYF-fI-ssZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ml9-l5-jNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392" y="63"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eti-Hc-EDJ">

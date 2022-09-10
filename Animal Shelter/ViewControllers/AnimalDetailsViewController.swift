@@ -33,6 +33,7 @@ final class AnimalDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        setupLabelsValue()
     }
 
     // MARK: - Setup Views
