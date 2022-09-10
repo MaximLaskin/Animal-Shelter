@@ -50,7 +50,7 @@
                                 <state key="normal" title="Login"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
-                                    <color key="baseBackgroundColor" red="0.094117648900000003" green="0.02745098248" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.087760247289999996" green="0.0264453087" blue="0.19609168169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="hRY-L8-cM0" kind="presentation" modalPresentationStyle="fullScreen" id="5oG-j7-b8r"/>

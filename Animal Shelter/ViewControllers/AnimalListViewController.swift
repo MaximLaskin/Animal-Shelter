@@ -7,9 +7,9 @@
 
 import UIKit
 
-class AnimalListViewController: UITableViewController {
+final class AnimalListViewController: UITableViewController {
 
-    var animals = [Animal]()
+    var animals = Animal.getDogsList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,14 +23,16 @@ class AnimalListViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let animal = animals[indexPath.row].nameAndBreed
-
-        var content = cell.defaultContentConfiguration()
-        content.text = animal
-        content.image = UIImage(named: animal)
         
-        cell.contentConfiguration = content
+        let animal = animals[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AnimalTableViewCell
+        
+        cell.animalImage.image = UIImage(named: animal.nameAndBreed)
+        cell.animalImage.layer.cornerRadius = tableView.rowHeight / 2
+        cell.animalImage.clipsToBounds = true
+        cell.animalNameAge.text = "\(animal.name), \(animal.age)"
+        cell.animalBreed.text = animal.breed
+        
         return cell
     }
 
@@ -41,7 +43,7 @@ class AnimalListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        60
+        100
     }
 
     // MARK: - Navigation
