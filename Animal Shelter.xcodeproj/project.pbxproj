@@ -17,13 +17,6 @@
 		8F445B4028CB4F7D008C6363 /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F445B3F28CB4F7D008C6363 /* AnimalTableViewCell.swift */; };
 		8FC4346028C9091600C0D92D /* StoryboardTanya.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC4345F28C9091500C0D92D /* StoryboardTanya.storyboard */; };
 		8FF38E4728C8B6F3004B0EC0 /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */; };
-<<<<<<< HEAD
-		9B47E8E428CBB5E2002C0A94 /* SamStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B47E8E328CBB5E2002C0A94 /* SamStoryboard.storyboard */; };
-		9B47E8E628CBCBFF002C0A94 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47E8E528CBCBFF002C0A94 /* OnboardingViewController.swift */; };
-		A627DF3F28C9095800C29DFC /* DevTeam.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A627DF3E28C9095800C29DFC /* DevTeam.storyboard */; };
-		A627DF4128C909FF00C29DFC /* DevTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A627DF4028C909FF00C29DFC /* DevTeamViewController.swift */; };
-=======
->>>>>>> origin/develop
 		CDC3957128C9325500B91ED6 /* UsersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3957028C9325500B91ED6 /* UsersData.swift */; };
 		CDC3957328CB4A0600B91ED6 /* Developers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC3957228CB4A0600B91ED6 /* Developers.storyboard */; };
 		CDC3957528CB4A3600B91ED6 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3957428CB4A3600B91ED6 /* Developer.swift */; };
@@ -46,13 +39,6 @@
 		8F445B3F28CB4F7D008C6363 /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
 		8FC4345F28C9091500C0D92D /* StoryboardTanya.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardTanya.storyboard; sourceTree = "<group>"; };
 		8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListViewController.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		9B47E8E328CBB5E2002C0A94 /* SamStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SamStoryboard.storyboard; sourceTree = "<group>"; };
-		9B47E8E528CBCBFF002C0A94 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		A627DF3E28C9095800C29DFC /* DevTeam.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DevTeam.storyboard; sourceTree = "<group>"; };
-		A627DF4028C909FF00C29DFC /* DevTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevTeamViewController.swift; sourceTree = "<group>"; };
-=======
->>>>>>> origin/develop
 		CDC3957028C9325500B91ED6 /* UsersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersData.swift; sourceTree = "<group>"; };
 		CDC3957228CB4A0600B91ED6 /* Developers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Developers.storyboard; sourceTree = "<group>"; };
 		CDC3957428CB4A3600B91ED6 /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
@@ -120,7 +106,6 @@
 				CDD8457E28C8F18800F5E166 /* LoginViewController.swift */,
 				CDC3957628CB58DC00B91ED6 /* DevelopersViewController.swift */,
 				4312DF7B28C8DF7D00EB804C /* AnimalDetailsViewController.swift */,
-				9B47E8E528CBCBFF002C0A94 /* OnboardingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -131,7 +116,6 @@
 				8FC4345F28C9091500C0D92D /* StoryboardTanya.storyboard */,
 				CDD8457A28C8B50900F5E166 /* Login.storyboard */,
 				CDC3957228CB4A0600B91ED6 /* Developers.storyboard */,
-				9B47E8E328CBB5E2002C0A94 /* SamStoryboard.storyboard */,
 				4312DF7928C8DED800EB804C /* MaximStoryboard.storyboard */,
 				4346F05E28C78B49004087E2 /* LaunchScreen.storyboard */,
 			);
@@ -223,7 +207,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDD8457B28C8B50900F5E166 /* Login.storyboard in Resources */,
-				9B47E8E428CBB5E2002C0A94 /* SamStoryboard.storyboard in Resources */,
 				4346F06028C78B49004087E2 /* LaunchScreen.storyboard in Resources */,
 				CDC3957328CB4A0600B91ED6 /* Developers.storyboard in Resources */,
 				4346F05D28C78B49004087E2 /* Assets.xcassets in Resources */,
@@ -239,7 +222,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B47E8E628CBCBFF002C0A94 /* OnboardingViewController.swift in Sources */,
 				CDD8457F28C8F18800F5E166 /* LoginViewController.swift in Sources */,
 				CDC3957728CB58DC00B91ED6 /* DevelopersViewController.swift in Sources */,
 				4312DF7828C8AD4300EB804C /* Animal.swift in Sources */,
