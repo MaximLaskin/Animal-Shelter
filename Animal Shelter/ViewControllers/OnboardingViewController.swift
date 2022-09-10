@@ -25,17 +25,18 @@ class OnboardingViewController: UIViewController {
     
     // MARK: - Private Properties
     private var stackIndex = 0 // index of current stack
+    var userName = ""
     
     
     // MARK: - Life Cicle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //updateUI()
-        firstLabel.text = "приветствуем тебя (currentUser) 😎"
+        updateUI()
+        firstStackView.isHidden = false
+        firstLabel.text = "приветствуем тебя \(userName) 😎"
         secondLabel.text = "Мы рады что принял такое важное решение - как усыновление животного 🥰"
         thirdLabel.text = "bla bla bla bla"
-        
     }
     
     
@@ -43,11 +44,18 @@ class OnboardingViewController: UIViewController {
     
  
     @IBAction func continueButtonPressed(_ sender: Any) {
-        continueButton.setTitle("Start", for: .normal)
-        
-        
-        // переход на следующий экран
-        // performSegue(withIdentifier: "nextScreen", sender: nil)
+        continueButton.setTitle("Continue", for: .normal)
+        if firstStackView.isHidden == false {
+            firstStackView.isHidden = true
+            secondStackView.isHidden = false
+            thirdStackView.isHidden = true
+        } else if secondStackView.isHidden == false {
+            thirdStackView.isHidden = false
+            firstStackView.isHidden = true
+            secondStackView.isHidden = true
+        } else if thirdStackView.isHidden == false {
+            performSegue(withIdentifier: "nextScreen", sender: nil)
+        }
     }
     
 
@@ -66,5 +74,6 @@ extension OnboardingViewController {
         for stackView in [firstStackView, secondStackView, thirdStackView] {
             stackView?.isHidden = true
         }
+ 
     }
 }
