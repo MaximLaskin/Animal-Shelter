@@ -78,14 +78,12 @@
 		4346F05228C78B47004087E2 /* Animal Shelter */ = {
 			isa = PBXGroup;
 			children = (
-				4346F05328C78B47004087E2 /* AppDelegate.swift */,
-				4346F05528C78B47004087E2 /* SceneDelegate.swift */,
+				CDC3957928CCDBB500B91ED6 /* AppFiles */,
 				CDC3957828CCDB0200B91ED6 /* Data */,
 				43E32E0628CA668500A753A8 /* ViewControllers */,
 				43E32E0528CA666700A753A8 /* Models */,
 				43E32E0728CA66BA00A753A8 /* StoryBoards */,
-				4346F05C28C78B49004087E2 /* Assets.xcassets */,
-				4346F06128C78B49004087E2 /* Info.plist */,
+				CDC3957A28CCDBBF00B91ED6 /* Resources */,
 			);
 			path = "Animal Shelter";
 			sourceTree = "<group>";
@@ -130,6 +128,24 @@
 				CDC3957028C9325500B91ED6 /* UsersData.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		CDC3957928CCDBB500B91ED6 /* AppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4346F06128C78B49004087E2 /* Info.plist */,
+				4346F05328C78B47004087E2 /* AppDelegate.swift */,
+				4346F05528C78B47004087E2 /* SceneDelegate.swift */,
+			);
+			path = AppFiles;
+			sourceTree = "<group>";
+		};
+		CDC3957A28CCDBBF00B91ED6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4346F05C28C78B49004087E2 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,7 +373,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 72WF57A54C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Animal Shelter/Info.plist";
+				INFOPLIST_FILE = "Animal Shelter/AppFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = StoryboardTanya;
@@ -386,7 +402,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 72WF57A54C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Animal Shelter/Info.plist";
+				INFOPLIST_FILE = "Animal Shelter/AppFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = StoryboardTanya;
