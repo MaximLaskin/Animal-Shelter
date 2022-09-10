@@ -143,9 +143,6 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
                                     <color key="baseBackgroundColor" red="0.094117648900000003" green="0.02745098248" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <segue destination="jyf-bY-aEJ" kind="presentation" id="imi-0E-vJh"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -177,16 +174,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="14.492753623188406" y="93.080357142857139"/>
-        </scene>
-        <!--DevTeam-->
-        <scene sceneID="3x5-ww-xlJ">
-            <objects>
-                <viewControllerPlaceholder storyboardName="DevTeam" id="jyf-bY-aEJ" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="OCJ-9o-j9b"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YiV-vq-CSB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="724" y="93"/>
         </scene>
     </scenes>
     <resources>
