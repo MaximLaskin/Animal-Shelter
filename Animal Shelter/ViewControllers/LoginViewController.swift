@@ -7,15 +7,20 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController {
+
+    // MARK: - IBOutlets
     
     @IBOutlet var loginTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var versionLabel: UILabel!
+
+    // MARK: - Private properties
     
     private let currentUser = User.getUsers().shuffled().first
     private let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
 
+    // MARK: - Life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()

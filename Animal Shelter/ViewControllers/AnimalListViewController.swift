@@ -52,5 +52,4 @@ final class AnimalListViewController: UITableViewController {
         guard let detailVC = segue.destination as? AnimalDetailsViewController else { return }
         detailVC.animal = sender as? Animal
     }
-
 }
