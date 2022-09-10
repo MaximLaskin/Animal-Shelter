@@ -32,6 +32,8 @@ final class AnimalDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+        
         setupView()
         setupLabelsValue()
     }
@@ -50,10 +52,7 @@ final class AnimalDetailsViewController: UIViewController {
     }
 
     private func setupView() {
-
-        view.backgroundColor = .white
-
-        [weightView, sexView, ageView].forEach{$0.layer.cornerRadius = 10}
+        [weightView, sexView, ageView].forEach{$0.layer.cornerRadius = tableView.rowHeight / 2}
         [weightView, sexView, ageView].forEach{$0?.backgroundColor = .clear}
         [weightView, sexView, ageView].forEach{$0.layer.borderWidth = 1}
         [weightView, sexView, ageView].forEach{$0.layer.borderColor = UIColor.gray.cgColor}

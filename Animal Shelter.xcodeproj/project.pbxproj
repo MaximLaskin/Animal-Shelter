@@ -15,7 +15,7 @@
 		4346F05D28C78B49004087E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4346F05C28C78B49004087E2 /* Assets.xcassets */; };
 		4346F06028C78B49004087E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4346F05E28C78B49004087E2 /* LaunchScreen.storyboard */; };
 		8F445B4028CB4F7D008C6363 /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F445B3F28CB4F7D008C6363 /* AnimalTableViewCell.swift */; };
-		8FC4346028C9091600C0D92D /* StoryboardTanya.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC4345F28C9091500C0D92D /* StoryboardTanya.storyboard */; };
+		8FC4346028C9091600C0D92D /* Animals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC4345F28C9091500C0D92D /* Animals.storyboard */; };
 		8FF38E4728C8B6F3004B0EC0 /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */; };
 		CDC3957128C9325500B91ED6 /* UsersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3957028C9325500B91ED6 /* UsersData.swift */; };
 		CDC3957328CB4A0600B91ED6 /* Developers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC3957228CB4A0600B91ED6 /* Developers.storyboard */; };
@@ -37,7 +37,7 @@
 		4346F05F28C78B49004087E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4346F06128C78B49004087E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F445B3F28CB4F7D008C6363 /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
-		8FC4345F28C9091500C0D92D /* StoryboardTanya.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardTanya.storyboard; sourceTree = "<group>"; };
+		8FC4345F28C9091500C0D92D /* Animals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animals.storyboard; sourceTree = "<group>"; };
 		8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListViewController.swift; sourceTree = "<group>"; };
 		CDC3957028C9325500B91ED6 /* UsersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersData.swift; sourceTree = "<group>"; };
 		CDC3957228CB4A0600B91ED6 /* Developers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Developers.storyboard; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		43E32E0728CA66BA00A753A8 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
-				8FC4345F28C9091500C0D92D /* StoryboardTanya.storyboard */,
+				8FC4345F28C9091500C0D92D /* Animals.storyboard */,
 				CDD8457A28C8B50900F5E166 /* Login.storyboard */,
 				CDC3957228CB4A0600B91ED6 /* Developers.storyboard */,
 				4312DF7928C8DED800EB804C /* MaximStoryboard.storyboard */,
@@ -211,7 +211,7 @@
 				CDC3957328CB4A0600B91ED6 /* Developers.storyboard in Resources */,
 				4346F05D28C78B49004087E2 /* Assets.xcassets in Resources */,
 				4312DF7A28C8DED800EB804C /* MaximStoryboard.storyboard in Resources */,
-				8FC4346028C9091600C0D92D /* StoryboardTanya.storyboard in Resources */,
+				8FC4346028C9091600C0D92D /* Animals.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,18 +16,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="110" id="zHl-QE-Sbd" customClass="AnimalTableViewCell" customModule="Animal_Shelter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="110"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="88" id="zHl-QE-Sbd" customClass="AnimalTableViewCell" customModule="Animal_Shelter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zHl-QE-Sbd" id="ZqD-14-iyN">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ojo-NU-r0p">
-                                            <rect key="frame" x="20" y="5" width="100" height="100"/>
+                                            <rect key="frame" x="20" y="10" width="70" height="68"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="100" id="sTK-V4-oga"/>
-                                                <constraint firstAttribute="width" constant="100" id="z1o-ZB-tBs"/>
+                                                <constraint firstAttribute="height" constant="70" id="sTK-V4-oga"/>
+                                                <constraint firstAttribute="width" constant="70" id="z1o-ZB-tBs"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -35,29 +35,25 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyx-ld-bMe">
-                                            <rect key="frame" x="140" y="21" width="254" height="21.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyx-ld-bMe">
+                                            <rect key="frame" x="110" y="11" width="284" height="21.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <color key="textColor" red="0.087760247289999996" green="0.0264453087" blue="0.19609168169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkf-Vh-IjN">
-                                            <rect key="frame" x="140" y="69.5" width="254" height="19.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Breed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkf-Vh-IjN">
+                                            <rect key="frame" x="110" y="47.5" width="284" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Ojo-NU-r0p" firstAttribute="top" secondItem="ZqD-14-iyN" secondAttribute="top" constant="5" id="5Ak-dn-yCP"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="xkf-Vh-IjN" secondAttribute="trailing" id="6xO-V5-ZD1"/>
-                                        <constraint firstItem="Zyx-ld-bMe" firstAttribute="leading" secondItem="Ojo-NU-r0p" secondAttribute="trailing" constant="20" id="WLT-oQ-7Ek"/>
-                                        <constraint firstItem="xkf-Vh-IjN" firstAttribute="leading" secondItem="Ojo-NU-r0p" secondAttribute="trailing" constant="20" id="YP5-aj-YCs"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Zyx-ld-bMe" secondAttribute="trailing" id="ca1-JU-ZvL"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="xkf-Vh-IjN" secondAttribute="bottom" constant="10" id="ksf-dW-KzA"/>
-                                        <constraint firstItem="Zyx-ld-bMe" firstAttribute="top" secondItem="ZqD-14-iyN" secondAttribute="topMargin" constant="10" id="nDb-NZ-MaL"/>
-                                        <constraint firstItem="Ojo-NU-r0p" firstAttribute="leading" secondItem="ZqD-14-iyN" secondAttribute="leading" constant="20" symbolic="YES" id="q5K-VC-gx2"/>
-                                        <constraint firstAttribute="bottom" secondItem="Ojo-NU-r0p" secondAttribute="bottom" constant="5" id="yVt-qi-fFn"/>
+                                        <constraint firstItem="Ojo-NU-r0p" firstAttribute="top" secondItem="ZqD-14-iyN" secondAttribute="top" constant="10" id="Xcs-Dh-6my"/>
+                                        <constraint firstItem="Ojo-NU-r0p" firstAttribute="leading" secondItem="ZqD-14-iyN" secondAttribute="leading" constant="20" id="jS3-2n-iFM"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ojo-NU-r0p" secondAttribute="bottom" constant="10" id="tXr-5A-vTt"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -79,7 +75,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXr-va-TjF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="584" y="63"/>
+            <point key="canvasLocation" x="582.60869565217399" y="62.946428571428569"/>
         </scene>
         <!--MaximStoryboard-->
         <scene sceneID="pXw-R4-euV">
@@ -111,9 +107,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
