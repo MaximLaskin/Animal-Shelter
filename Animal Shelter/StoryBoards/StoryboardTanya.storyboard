@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Найди своего друга!-->
+        <!--Найди своего друга-->
         <scene sceneID="TC3-g8-fzD">
             <objects>
                 <tableViewController storyboardIdentifier="animalsListVC" id="Jlw-yd-3PP" customClass="AnimalListViewController" customModule="Animal_Shelter" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,7 +72,7 @@
                             <outlet property="delegate" destination="Jlw-yd-3PP" id="ewn-BE-Qsl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Найди своего друга!" id="now-Oj-iQl"/>
+                    <navigationItem key="navigationItem" title="Найди своего друга" id="now-Oj-iQl"/>
                     <connections>
                         <segue destination="kbr-77-pE7" kind="show" identifier="showDetail" id="Qp7-MJ-EKP"/>
                     </connections>
