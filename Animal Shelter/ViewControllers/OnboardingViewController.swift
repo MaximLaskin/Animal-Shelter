@@ -55,7 +55,8 @@ class OnboardingViewController: UIViewController {
             secondStackView.isHidden = true
         } else if thirdStackView.isHidden == false {
             performSegue(withIdentifier: "nextScreen", sender: nil)
-            // vhaefvljafv
+            // мйукорй
+            // йкдптйцкжпл т    
         }
     }
     
