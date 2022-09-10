@@ -9,7 +9,7 @@ import UIKit
 
 final class AnimalListViewController: UITableViewController {
 
-    var animals = Animal.getCatsList()
+    var animals: [Animal]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
