@@ -12,17 +12,14 @@
 		4312DF7C28C8DF7D00EB804C /* AnimalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4312DF7B28C8DF7D00EB804C /* AnimalDetailsViewController.swift */; };
 		4346F05428C78B47004087E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4346F05328C78B47004087E2 /* AppDelegate.swift */; };
 		4346F05628C78B47004087E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4346F05528C78B47004087E2 /* SceneDelegate.swift */; };
-		4346F05828C78B47004087E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4346F05728C78B47004087E2 /* ViewController.swift */; };
 		4346F05D28C78B49004087E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4346F05C28C78B49004087E2 /* Assets.xcassets */; };
 		4346F06028C78B49004087E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4346F05E28C78B49004087E2 /* LaunchScreen.storyboard */; };
 		8F445B4028CB4F7D008C6363 /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F445B3F28CB4F7D008C6363 /* AnimalTableViewCell.swift */; };
 		8FC4346028C9091600C0D92D /* StoryboardTanya.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC4345F28C9091500C0D92D /* StoryboardTanya.storyboard */; };
 		8FF38E4728C8B6F3004B0EC0 /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */; };
-		A627DF3F28C9095800C29DFC /* DevTeam.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A627DF3E28C9095800C29DFC /* DevTeam.storyboard */; };
-		A627DF4128C909FF00C29DFC /* DevTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A627DF4028C909FF00C29DFC /* DevTeamViewController.swift */; };
 		CDC3957128C9325500B91ED6 /* UsersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3957028C9325500B91ED6 /* UsersData.swift */; };
 		CDC3957328CB4A0600B91ED6 /* Developers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC3957228CB4A0600B91ED6 /* Developers.storyboard */; };
-		CDC3957528CB4A3600B91ED6 /* Developers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3957428CB4A3600B91ED6 /* Developers.swift */; };
+		CDC3957528CB4A3600B91ED6 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3957428CB4A3600B91ED6 /* Developer.swift */; };
 		CDC3957728CB58DC00B91ED6 /* DevelopersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3957628CB58DC00B91ED6 /* DevelopersViewController.swift */; };
 		CDD8457B28C8B50900F5E166 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD8457A28C8B50900F5E166 /* Login.storyboard */; };
 		CDD8457F28C8F18800F5E166 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD8457E28C8F18800F5E166 /* LoginViewController.swift */; };
@@ -36,18 +33,15 @@
 		4346F05028C78B47004087E2 /* Animal Shelter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animal Shelter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4346F05328C78B47004087E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4346F05528C78B47004087E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4346F05728C78B47004087E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4346F05C28C78B49004087E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4346F05F28C78B49004087E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4346F06128C78B49004087E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F445B3F28CB4F7D008C6363 /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
 		8FC4345F28C9091500C0D92D /* StoryboardTanya.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardTanya.storyboard; sourceTree = "<group>"; };
 		8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListViewController.swift; sourceTree = "<group>"; };
-		A627DF3E28C9095800C29DFC /* DevTeam.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DevTeam.storyboard; sourceTree = "<group>"; };
-		A627DF4028C909FF00C29DFC /* DevTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevTeamViewController.swift; sourceTree = "<group>"; };
 		CDC3957028C9325500B91ED6 /* UsersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersData.swift; sourceTree = "<group>"; };
 		CDC3957228CB4A0600B91ED6 /* Developers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Developers.storyboard; sourceTree = "<group>"; };
-		CDC3957428CB4A3600B91ED6 /* Developers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developers.swift; sourceTree = "<group>"; };
+		CDC3957428CB4A3600B91ED6 /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
 		CDC3957628CB58DC00B91ED6 /* DevelopersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersViewController.swift; sourceTree = "<group>"; };
 		CDD8457A28C8B50900F5E166 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		CDD8457E28C8F18800F5E166 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +80,7 @@
 			children = (
 				4346F05328C78B47004087E2 /* AppDelegate.swift */,
 				4346F05528C78B47004087E2 /* SceneDelegate.swift */,
+				CDC3957828CCDB0200B91ED6 /* Data */,
 				43E32E0628CA668500A753A8 /* ViewControllers */,
 				43E32E0528CA666700A753A8 /* Models */,
 				43E32E0728CA66BA00A753A8 /* StoryBoards */,
@@ -99,9 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				4312DF7728C8AD4300EB804C /* Animal.swift */,
-				CDC3957428CB4A3600B91ED6 /* Developers.swift */,
+				CDC3957428CB4A3600B91ED6 /* Developer.swift */,
 				CDD8458028C9000700F5E166 /* User.swift */,
-				CDC3957028C9325500B91ED6 /* UsersData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -109,11 +103,9 @@
 		43E32E0628CA668500A753A8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4346F05728C78B47004087E2 /* ViewController.swift */,
 				8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */,
 				8F445B3F28CB4F7D008C6363 /* AnimalTableViewCell.swift */,
 				CDD8457E28C8F18800F5E166 /* LoginViewController.swift */,
-				A627DF4028C909FF00C29DFC /* DevTeamViewController.swift */,
 				CDC3957628CB58DC00B91ED6 /* DevelopersViewController.swift */,
 				4312DF7B28C8DF7D00EB804C /* AnimalDetailsViewController.swift */,
 			);
@@ -127,10 +119,17 @@
 				CDD8457A28C8B50900F5E166 /* Login.storyboard */,
 				CDC3957228CB4A0600B91ED6 /* Developers.storyboard */,
 				4312DF7928C8DED800EB804C /* MaximStoryboard.storyboard */,
-				A627DF3E28C9095800C29DFC /* DevTeam.storyboard */,
 				4346F05E28C78B49004087E2 /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		CDC3957828CCDB0200B91ED6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CDC3957028C9325500B91ED6 /* UsersData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +194,6 @@
 				4346F06028C78B49004087E2 /* LaunchScreen.storyboard in Resources */,
 				CDC3957328CB4A0600B91ED6 /* Developers.storyboard in Resources */,
 				4346F05D28C78B49004087E2 /* Assets.xcassets in Resources */,
-				A627DF3F28C9095800C29DFC /* DevTeam.storyboard in Resources */,
 				4312DF7A28C8DED800EB804C /* MaximStoryboard.storyboard in Resources */,
 				8FC4346028C9091600C0D92D /* StoryboardTanya.storyboard in Resources */,
 			);
@@ -210,17 +208,15 @@
 			files = (
 				CDD8457F28C8F18800F5E166 /* LoginViewController.swift in Sources */,
 				CDC3957728CB58DC00B91ED6 /* DevelopersViewController.swift in Sources */,
-				4346F05828C78B47004087E2 /* ViewController.swift in Sources */,
 				4312DF7828C8AD4300EB804C /* Animal.swift in Sources */,
 				4346F05428C78B47004087E2 /* AppDelegate.swift in Sources */,
 				8FF38E4728C8B6F3004B0EC0 /* AnimalListViewController.swift in Sources */,
 				8F445B4028CB4F7D008C6363 /* AnimalTableViewCell.swift in Sources */,
-				CDC3957528CB4A3600B91ED6 /* Developers.swift in Sources */,
+				CDC3957528CB4A3600B91ED6 /* Developer.swift in Sources */,
 				CDD8458128C9000700F5E166 /* User.swift in Sources */,
 				CDC3957128C9325500B91ED6 /* UsersData.swift in Sources */,
 				4346F05628C78B47004087E2 /* SceneDelegate.swift in Sources */,
 				4312DF7C28C8DF7D00EB804C /* AnimalDetailsViewController.swift in Sources */,
-				A627DF4128C909FF00C29DFC /* DevTeamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,8 +362,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = StoryboardTanya;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -395,8 +391,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = StoryboardTanya;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
