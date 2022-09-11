@@ -21,6 +21,15 @@ final class SuccessfulOrderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.addVerticalGradientLayer(
+            topRed: 245,
+            topGreen: 189,
+            topBlue: 189,
+            bottomRed: 245,
+            bottomGreen: 189,
+            bottomBlue: 189
+        )
+
         imageView.image = UIImage(named: animal.nameAndBreed)
         imageView.layer.cornerRadius = imageView.bounds.height / 2
 
