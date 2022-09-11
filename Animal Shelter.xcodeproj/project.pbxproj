@@ -18,6 +18,8 @@
 		8F69530228CDBD4400B1598E /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F69530128CDBD4400B1598E /* ChoiceViewController.swift */; };
 		8FC4346028C9091600C0D92D /* StoryboardTanya.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC4345F28C9091500C0D92D /* StoryboardTanya.storyboard */; };
 		8FF38E4728C8B6F3004B0EC0 /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */; };
+		9BAC2AE928CDECC00076BF33 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC2AE828CDECC00076BF33 /* Onboarding.storyboard */; };
+		9BAC2AEB28CDECD90076BF33 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC2AEA28CDECD90076BF33 /* OnboardingViewController.swift */; };
 		CDC3957128C9325500B91ED6 /* UsersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3957028C9325500B91ED6 /* UsersData.swift */; };
 		CDC3957328CB4A0600B91ED6 /* Developers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC3957228CB4A0600B91ED6 /* Developers.storyboard */; };
 		CDC3957528CB4A3600B91ED6 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3957428CB4A3600B91ED6 /* Developer.swift */; };
@@ -41,6 +43,8 @@
 		8F69530128CDBD4400B1598E /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
 		8FC4345F28C9091500C0D92D /* StoryboardTanya.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardTanya.storyboard; sourceTree = "<group>"; };
 		8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListViewController.swift; sourceTree = "<group>"; };
+		9BAC2AE828CDECC00076BF33 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		9BAC2AEA28CDECD90076BF33 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CDC3957028C9325500B91ED6 /* UsersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersData.swift; sourceTree = "<group>"; };
 		CDC3957228CB4A0600B91ED6 /* Developers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Developers.storyboard; sourceTree = "<group>"; };
 		CDC3957428CB4A3600B91ED6 /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 				8F445B3F28CB4F7D008C6363 /* AnimalTableViewCell.swift */,
 				CDD8457E28C8F18800F5E166 /* LoginViewController.swift */,
 				CDC3957628CB58DC00B91ED6 /* DevelopersViewController.swift */,
+				9BAC2AEA28CDECD90076BF33 /* OnboardingViewController.swift */,
 				4312DF7B28C8DF7D00EB804C /* AnimalDetailsViewController.swift */,
 			);
 			path = ViewControllers;
@@ -120,6 +125,7 @@
 				CDD8457A28C8B50900F5E166 /* Login.storyboard */,
 				CDC3957228CB4A0600B91ED6 /* Developers.storyboard */,
 				4312DF7928C8DED800EB804C /* MaximStoryboard.storyboard */,
+				9BAC2AE828CDECC00076BF33 /* Onboarding.storyboard */,
 				4346F05E28C78B49004087E2 /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoards;
@@ -213,6 +219,7 @@
 				4346F06028C78B49004087E2 /* LaunchScreen.storyboard in Resources */,
 				CDC3957328CB4A0600B91ED6 /* Developers.storyboard in Resources */,
 				4346F05D28C78B49004087E2 /* Assets.xcassets in Resources */,
+				9BAC2AE928CDECC00076BF33 /* Onboarding.storyboard in Resources */,
 				4312DF7A28C8DED800EB804C /* MaximStoryboard.storyboard in Resources */,
 				8FC4346028C9091600C0D92D /* StoryboardTanya.storyboard in Resources */,
 			);
@@ -225,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BAC2AEB28CDECD90076BF33 /* OnboardingViewController.swift in Sources */,
 				CDD8457F28C8F18800F5E166 /* LoginViewController.swift in Sources */,
 				CDC3957728CB58DC00B91ED6 /* DevelopersViewController.swift in Sources */,
 				4312DF7828C8AD4300EB804C /* Animal.swift in Sources */,
@@ -380,7 +388,7 @@
 				INFOPLIST_FILE = "Animal Shelter/AppFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = StoryboardTanya;
+				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
@@ -409,7 +417,7 @@
 				INFOPLIST_FILE = "Animal Shelter/AppFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = StoryboardTanya;
+				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
