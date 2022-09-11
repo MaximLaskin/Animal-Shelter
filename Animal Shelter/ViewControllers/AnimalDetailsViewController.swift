@@ -41,6 +41,7 @@ final class AnimalDetailsViewController: UIViewController {
     private func setupLabelsValue() {
 
         imageView.image = UIImage(named: animal.nameAndBreed)
+        imageView.layer.cornerRadius = 10
 
         sexLabel.text = animal.sex
         ageLabel.text = animal.age
