@@ -7,18 +7,24 @@
 
 import UIKit
 
-class ChoiceViewController: UIViewController {
-    
+final class ChoiceViewController: UIViewController {
+
+    // MARK: - IBOutlets
+
     @IBOutlet var catButton: UIButton!
     @IBOutlet var dogButton: UIButton!
     
     var animals = [Animal]()
+
+    // MARK: - Life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         catButton.layer.cornerRadius = 10
         dogButton.layer.cornerRadius = 10
     }
+
+    // MARK: - IBAction
     
     @IBAction func choiceButtonTapped(_ sender: UIButton) {
         if sender.tag == 0 {
@@ -36,5 +42,4 @@ class ChoiceViewController: UIViewController {
         guard let animalListVC = navigationVC.topViewController as? AnimalListViewController else { return }
         animalListVC.animals = animals
     }
-
 }
