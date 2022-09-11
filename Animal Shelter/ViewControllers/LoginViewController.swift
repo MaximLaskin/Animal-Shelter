@@ -64,9 +64,12 @@ final class LoginViewController: UIViewController {
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //    guard let user = currentUser else { return }
-     
-    //   let destinationVC = segue.destination as! SecondViewController
+        guard let userName = loginTextField.text else { return }
+        guard let navigationBar = segue.destination as? UINavigationController else { return }
+        
+        if let onboardingVC = navigationBar.topViewController as? OnboardingViewController {
+            onboardingVC.userName = userName
+        }
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
