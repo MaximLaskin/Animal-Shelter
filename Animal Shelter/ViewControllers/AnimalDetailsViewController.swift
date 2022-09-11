@@ -41,6 +41,7 @@ final class AnimalDetailsViewController: UIViewController {
     private func setupLabelsValue() {
 
         imageView.image = UIImage(named: animal.nameAndBreed)
+        imageView.layer.cornerRadius = 10
 
         sexLabel.text = animal.sex
         ageLabel.text = animal.age
@@ -57,5 +58,11 @@ final class AnimalDetailsViewController: UIViewController {
         [weightView, sexView, ageView].forEach{$0?.backgroundColor = .clear}
         [weightView, sexView, ageView].forEach{$0.layer.borderWidth = 1}
         [weightView, sexView, ageView].forEach{$0.layer.borderColor = UIColor.gray.cgColor}
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let successVC = segue.destination as? SuccessfulOrderViewController else { return }
+        successVC.animal = animal
+
     }
 }
