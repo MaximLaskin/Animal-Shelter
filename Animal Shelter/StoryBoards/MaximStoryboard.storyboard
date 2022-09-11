@@ -196,7 +196,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="doneButtonPressed:" destination="j1M-6o-ivi" eventType="touchUpInside" id="kLU-uv-Kl7"/>
-                                    <segue destination="qlu-Rf-Yx8" kind="presentation" identifier="toUserRoom" id="yIY-wI-zla"/>
+                                    <segue destination="qlu-Rf-Yx8" kind="presentation" identifier="toUserRoom" modalPresentationStyle="fullScreen" id="yIY-wI-zla"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zS3-CK-AIW">
