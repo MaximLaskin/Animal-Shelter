@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Найди своего друга!-->
+        <!--Найди своего друга-->
         <scene sceneID="TC3-g8-fzD">
             <objects>
                 <tableViewController storyboardIdentifier="animalsListVC" id="Jlw-yd-3PP" customClass="AnimalListViewController" customModule="Animal_Shelter" customModuleProvider="target" sceneMemberID="viewController">
@@ -49,6 +49,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="Ojo-NU-r0p" firstAttribute="top" secondItem="ZqD-14-iyN" secondAttribute="top" constant="5" id="5Ak-dn-yCP"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="xkf-Vh-IjN" secondAttribute="trailing" id="6xO-V5-ZD1"/>
@@ -73,7 +74,7 @@
                             <outlet property="delegate" destination="Jlw-yd-3PP" id="ewn-BE-Qsl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Найди своего друга!" id="now-Oj-iQl"/>
+                    <navigationItem key="navigationItem" title="Найди своего друга" id="now-Oj-iQl"/>
                     <connections>
                         <segue destination="kbr-77-pE7" kind="show" identifier="showDetail" id="Qp7-MJ-EKP"/>
                     </connections>
@@ -103,22 +104,22 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какого питомца ты выберешь?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqf-sW-ix2">
                                 <rect key="frame" x="16" y="144" width="382" height="72"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="DWR-o9-f5m">
-                                <rect key="frame" x="157" y="266" width="100" height="171"/>
+                                <rect key="frame" x="137" y="266" width="140" height="171"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GkU-sy-IGX">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="60"/>
                                         <color key="backgroundColor" red="0.087760247289999996" green="0.0264453087" blue="0.19609168169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="Ubw-ig-yCQ"/>
+                                            <constraint firstAttribute="width" constant="140" id="Ubw-ig-yCQ"/>
                                             <constraint firstAttribute="height" constant="60" id="r6J-0E-ujx"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Кошка">
+                                        <state key="normal" title="🐱 Кошка">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -126,15 +127,15 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="983-PY-htZ">
-                                        <rect key="frame" x="0.0" y="111" width="100" height="60"/>
+                                        <rect key="frame" x="0.0" y="111" width="140" height="60"/>
                                         <color key="backgroundColor" red="0.087760247289999996" green="0.0264453087" blue="0.19609168169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="Rso-Ea-y4n"/>
-                                            <constraint firstAttribute="width" constant="100" id="nhe-pS-dhg"/>
+                                            <constraint firstAttribute="width" constant="140" id="nhe-pS-dhg"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Собака">
+                                        <state key="normal" title="🐶 Собака">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -159,7 +160,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="66s-Yx-H66"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="66s-Yx-H66" firstAttribute="trailing" secondItem="GGR-5K-SSa" secondAttribute="trailing" constant="36" id="9Lc-ek-9mP"/>
                             <constraint firstItem="tqf-sW-ix2" firstAttribute="leading" secondItem="66s-Yx-H66" secondAttribute="leading" constant="16" id="DeD-Qq-wMK"/>

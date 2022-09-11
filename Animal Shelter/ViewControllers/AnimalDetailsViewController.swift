@@ -52,7 +52,7 @@ final class AnimalDetailsViewController: UIViewController {
 
     private func setupView() {
 
-        view.backgroundColor = #colorLiteral(red: 1, green: 0.7176906918, blue: 0.699740553, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
 
         [weightView, sexView, ageView].forEach{$0.layer.cornerRadius = 10}
         [weightView, sexView, ageView].forEach{$0?.backgroundColor = .clear}
