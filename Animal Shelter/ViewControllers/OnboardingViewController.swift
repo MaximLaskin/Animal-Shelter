@@ -43,7 +43,6 @@ class OnboardingViewController: UIViewController {
         firstLabel.text = "Привет, \(userName) 😎"
         secondLabel.text = "Рады что готов найти новго друга 🥰"
         thirdLabel.text = "Ведь он уже ждет тебя 🐶❤️🐱"
-        forthLabel.text = "Давай приступим ❤️"
     }
     
     // MARK: - IBActions
