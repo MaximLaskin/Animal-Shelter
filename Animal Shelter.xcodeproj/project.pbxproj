@@ -14,7 +14,10 @@
 		4346F05628C78B47004087E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4346F05528C78B47004087E2 /* SceneDelegate.swift */; };
 		4346F05D28C78B49004087E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4346F05C28C78B49004087E2 /* Assets.xcassets */; };
 		4346F06028C78B49004087E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4346F05E28C78B49004087E2 /* LaunchScreen.storyboard */; };
+		43585AF828CD2ED1009EFEFA /* ChoiceOfAnimal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43585AF728CD2ED1009EFEFA /* ChoiceOfAnimal.storyboard */; };
+		43585AFA28CD33F3009EFEFA /* ChoiceOfAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43585AF928CD33F3009EFEFA /* ChoiceOfAnimalViewController.swift */; };
 		8F445B4028CB4F7D008C6363 /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F445B3F28CB4F7D008C6363 /* AnimalTableViewCell.swift */; };
+		8F69530228CDBD4400B1598E /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F69530128CDBD4400B1598E /* ChoiceViewController.swift */; };
 		8FC4346028C9091600C0D92D /* StoryboardTanya.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC4345F28C9091500C0D92D /* StoryboardTanya.storyboard */; };
 		8FF38E4728C8B6F3004B0EC0 /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */; };
 		CDC3957128C9325500B91ED6 /* UsersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3957028C9325500B91ED6 /* UsersData.swift */; };
@@ -36,7 +39,10 @@
 		4346F05C28C78B49004087E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4346F05F28C78B49004087E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4346F06128C78B49004087E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43585AF728CD2ED1009EFEFA /* ChoiceOfAnimal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChoiceOfAnimal.storyboard; sourceTree = "<group>"; };
+		43585AF928CD33F3009EFEFA /* ChoiceOfAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceOfAnimalViewController.swift; sourceTree = "<group>"; };
 		8F445B3F28CB4F7D008C6363 /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
+		8F69530128CDBD4400B1598E /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
 		8FC4345F28C9091500C0D92D /* StoryboardTanya.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardTanya.storyboard; sourceTree = "<group>"; };
 		8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListViewController.swift; sourceTree = "<group>"; };
 		CDC3957028C9325500B91ED6 /* UsersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersData.swift; sourceTree = "<group>"; };
@@ -102,10 +108,12 @@
 			isa = PBXGroup;
 			children = (
 				8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */,
+				8F69530128CDBD4400B1598E /* ChoiceViewController.swift */,
 				8F445B3F28CB4F7D008C6363 /* AnimalTableViewCell.swift */,
 				CDD8457E28C8F18800F5E166 /* LoginViewController.swift */,
 				CDC3957628CB58DC00B91ED6 /* DevelopersViewController.swift */,
 				4312DF7B28C8DF7D00EB804C /* AnimalDetailsViewController.swift */,
+				43585AF928CD33F3009EFEFA /* ChoiceOfAnimalViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -118,6 +126,7 @@
 				CDC3957228CB4A0600B91ED6 /* Developers.storyboard */,
 				4312DF7928C8DED800EB804C /* MaximStoryboard.storyboard */,
 				4346F05E28C78B49004087E2 /* LaunchScreen.storyboard */,
+				43585AF728CD2ED1009EFEFA /* ChoiceOfAnimal.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -211,6 +220,7 @@
 				CDC3957328CB4A0600B91ED6 /* Developers.storyboard in Resources */,
 				4346F05D28C78B49004087E2 /* Assets.xcassets in Resources */,
 				4312DF7A28C8DED800EB804C /* MaximStoryboard.storyboard in Resources */,
+				43585AF828CD2ED1009EFEFA /* ChoiceOfAnimal.storyboard in Resources */,
 				8FC4346028C9091600C0D92D /* StoryboardTanya.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +238,8 @@
 				4346F05428C78B47004087E2 /* AppDelegate.swift in Sources */,
 				8FF38E4728C8B6F3004B0EC0 /* AnimalListViewController.swift in Sources */,
 				8F445B4028CB4F7D008C6363 /* AnimalTableViewCell.swift in Sources */,
+				43585AFA28CD33F3009EFEFA /* ChoiceOfAnimalViewController.swift in Sources */,
+				8F69530228CDBD4400B1598E /* ChoiceViewController.swift in Sources */,
 				CDC3957528CB4A3600B91ED6 /* Developer.swift in Sources */,
 				CDD8458128C9000700F5E166 /* User.swift in Sources */,
 				CDC3957128C9325500B91ED6 /* UsersData.swift in Sources */,
