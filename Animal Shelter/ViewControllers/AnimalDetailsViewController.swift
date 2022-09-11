@@ -27,6 +27,7 @@ final class AnimalDetailsViewController: UIViewController {
     @IBOutlet weak var shelterButton: UIButton!
 
     var animal: Animal!
+    var userName: String!
 
 // MARK: - Life cycle
 
@@ -63,5 +64,6 @@ final class AnimalDetailsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let successVC = segue.destination as? SuccessfulOrderViewController else { return }
         successVC.animal = animal
+        successVC.userName = userName
     }
 }

@@ -10,6 +10,7 @@ import UIKit
 final class AnimalListViewController: UITableViewController {
 
     var animals: [Animal]!
+    var userName: String!
 
     // MARK: - Life cycle
     
@@ -53,5 +54,6 @@ final class AnimalListViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailVC = segue.destination as? AnimalDetailsViewController else { return }
         detailVC.animal = sender as? Animal
+        detailVC.userName = userName
     }
 }

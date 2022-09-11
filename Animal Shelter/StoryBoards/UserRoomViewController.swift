@@ -18,29 +18,47 @@ class UserRoomViewController: UIViewController {
     var userNameURVC: String!
     var dogsOrderURVC: String!
     var catsOrderURVC: String!
+    var userName: String!
     
     var animal: Animal!
+    var users = Developer.getDevelopers()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         userNameLabel.text = userNameURVC
         setAnimalLabel()
+        dogsOrderLabel.text = dogsOrderURVC
+        catsOrderLabel.text = catsOrderURVC
+        userNameLabel.text = "Хозяин: " + userName
+        setUserImage()
+        userImage.layer.cornerRadius = 10
 
         // Do any additional setup after loading the view.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let choiseVC = segue.destination as? ChoiceViewController else { return }
+        choiseVC.userName = userName
+    }
+    
     private func setAnimalLabel() {
         if animal.animalType == Animal.AnimalType.dog {
-            dogsOrderLabel.text = "Твой новый друг: \(animal.breed) \(animal.name)"
+            dogsOrderURVC = "Твой новый друг: \(animal.breed) \(animal.name)"
         } else {
-            catsOrderLabel.text = "Твой новый друг: \(animal.breed) \(animal.name)"
+            catsOrderURVC = "Твой новый друг: \(animal.breed) \(animal.name)"
         }
     }
     
+    private func setUserImage() {
+        for user in users {
+            if user.name == userName {
+                userImage.image = user.photo
+            }
+        }
+    }
+     
 
-    
     @IBAction func orderMore() {
-        
     }
     
 

@@ -15,6 +15,7 @@ final class ChoiceViewController: UIViewController {
     @IBOutlet var dogButton: UIButton!
     
     var animals = [Animal]()
+    var userName: String!
 
     // MARK: - Life cycle
 
@@ -41,5 +42,6 @@ final class ChoiceViewController: UIViewController {
         guard let navigationVC = segue.destination as? UINavigationController else { return }
         guard let animalListVC = navigationVC.topViewController as? AnimalListViewController else { return }
         animalListVC.animals = animals
+        animalListVC.userName = userName
     }
 }

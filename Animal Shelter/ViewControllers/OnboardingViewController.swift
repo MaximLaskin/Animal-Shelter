@@ -43,6 +43,11 @@ class OnboardingViewController: UIViewController {
         thirdLabel.text = "Ведь он уже ждет тебя 🐶❤️🐱"
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let choiseVC = segue.destination as? ChoiceViewController else { return }
+        choiseVC.userName = userName
+    }
+    
     // MARK: - IBActions
     
     @IBAction func actionButtonPressed(_ sender: Any) {

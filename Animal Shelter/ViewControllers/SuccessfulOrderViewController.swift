@@ -15,6 +15,7 @@ final class SuccessfulOrderViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
 
     var animal: Animal!
+    var userName: String!
 
 // MARK: - Life cycle
     
@@ -30,8 +31,9 @@ final class SuccessfulOrderViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let userRoomVC = segue.destination as? UserRoomViewController else { return }
-           userRoomVC.animal = animal
-    
+        userRoomVC.animal = animal
+        userRoomVC.userName = userName
+        
     }
     
     // MARK: - IBAction

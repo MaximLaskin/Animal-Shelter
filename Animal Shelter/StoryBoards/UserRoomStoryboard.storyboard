@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,7 +14,7 @@
                 <viewControllerPlaceholder storyboardName="StoryboardTanya" id="lHE-lG-UIC" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Lf-39-ajR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-686" y="305"/>
+            <point key="canvasLocation" x="35" y="538"/>
         </scene>
         <!--User Room View Controller-->
         <scene sceneID="s0d-6b-0kx">
@@ -25,36 +25,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="WH6-y7-6bK">
-                                <rect key="frame" x="16" y="94" width="382" height="402"/>
+                                <rect key="frame" x="16" y="94" width="382" height="430"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RRP-zm-7UZ">
-                                        <rect key="frame" x="91" y="0.0" width="200" height="200"/>
+                                        <rect key="frame" x="66" y="0.0" width="250" height="250"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="XgY-91-BUM"/>
-                                            <constraint firstAttribute="height" constant="200" id="xJO-pJ-3Mf"/>
+                                            <constraint firstAttribute="width" secondItem="RRP-zm-7UZ" secondAttribute="height" multiplier="1:1" id="25Q-Ot-FeD"/>
+                                            <constraint firstAttribute="height" constant="250" id="xJO-pJ-3Mf"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AV-Sp-vyM">
-                                        <rect key="frame" x="152" y="230" width="78.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AV-Sp-vyM">
+                                        <rect key="frame" x="135.5" y="280" width="111" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.095333300529999998" green="0.027277555320000001" blue="0.19609153269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Собачки" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVb-Yf-2hs">
+                                        <rect key="frame" x="142" y="340" width="98.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Твои заказы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2i-p9-KJC">
-                                        <rect key="frame" x="142" y="280.5" width="98.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Собачки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVb-Yf-2hs">
-                                        <rect key="frame" x="156.5" y="331" width="69" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кошечки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ary-e6-9Nu">
-                                        <rect key="frame" x="155.5" y="381.5" width="71" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кошечки" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ary-e6-9Nu">
+                                        <rect key="frame" x="140.5" y="400" width="101" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -77,7 +71,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="orderMore" destination="Y6W-OH-hqX" eventType="touchUpInside" id="NkI-98-wcc"/>
-                                            <segue destination="lHE-lG-UIC" kind="presentation" identifier="OrderMore" id="Dag-yC-tCd"/>
+                                            <segue destination="lHE-lG-UIC" kind="presentation" identifier="OrderMore" modalPresentationStyle="fullScreen" id="Dag-yC-tCd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13w-Dj-6IK">
@@ -91,6 +85,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="payAndExit" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gqd-7A-dTz"/>
+                                            <segue destination="9Xh-VQ-2N0" kind="presentation" modalPresentationStyle="fullScreen" id="Sjc-yc-TBX"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -117,6 +112,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="67.633928571428569"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="pLK-lY-NwB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="9Xh-VQ-2N0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QY6-my-L0V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="843" y="68"/>
         </scene>
     </scenes>
     <resources>
