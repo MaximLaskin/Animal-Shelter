@@ -17,15 +17,15 @@ class SuccessfulOrderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
         imageView.image = UIImage(named: animal.nameAndBreed)
         imageView.layer.cornerRadius = imageView.bounds.height / 2
 
         congratulationLabel.text = "Вы приютили \(animal.name)"
-
-
     }
-
+    
+    @IBAction func developersButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "showDewelopers", sender: nil)
+    }
 
     @IBAction func doneButtonPressed(_ sender: UIButton) {
     }
