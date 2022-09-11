@@ -7,10 +7,9 @@
 
 import UIKit
 
-class AnimalTableViewCell: UITableViewCell {
+final class AnimalTableViewCell: UITableViewCell {
 
     @IBOutlet var animalImage: UIImageView!
     @IBOutlet var animalNameAge: UILabel!
     @IBOutlet var animalBreed: UILabel!
-    
 }

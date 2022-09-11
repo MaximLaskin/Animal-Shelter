@@ -63,6 +63,5 @@ final class AnimalDetailsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let successVC = segue.destination as? SuccessfulOrderViewController else { return }
         successVC.animal = animal
-
     }
 }

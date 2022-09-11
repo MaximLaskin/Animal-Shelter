@@ -7,13 +7,17 @@
 
 import UIKit
 
-class SuccessfulOrderViewController: UIViewController {
+final class SuccessfulOrderViewController: UIViewController {
+
+    // MARK: - IBOutlets
 
     @IBOutlet weak var congratulationLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
 
     var animal: Animal!
 
+// MARK: - Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +26,8 @@ class SuccessfulOrderViewController: UIViewController {
 
         congratulationLabel.text = "Вы приютили \(animal.name)"
     }
+
+    // MARK: - IBAction
     
     @IBAction func developersButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "showDewelopers", sender: nil)
