@@ -10,13 +10,18 @@ import UIKit
 class SuccessfulOrderViewController: UIViewController {
 
     @IBOutlet weak var congratulationLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
 
     var animal: Animal!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        congratulationLabel.text = "Спасибо! Вы приютили \(animal.name)"
+
+        imageView.image = UIImage(named: animal.nameAndBreed)
+        imageView.layer.cornerRadius = imageView.bounds.height / 2
+
+        congratulationLabel.text = "Вы приютили \(animal.name)"
 
 
     }
