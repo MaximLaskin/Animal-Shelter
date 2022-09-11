@@ -35,10 +35,8 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
         updateUI()
         setLabelFont()
-        
-        // showing firstStackView as default
+
         firstStackView.isHidden = false
-        
 
         firstLabel.text = "Привет, \(userName) 😎"
         secondLabel.text = "Рады что готов найти новго друга 🥰"
@@ -51,7 +49,6 @@ class OnboardingViewController: UIViewController {
 
         actionButton.setTitle("Далее", for: .normal)
 
-        
         if firstStackView.isHidden == false {
             stackIndex += 0.5
             progressBar.setProgress(0.5, animated: true)
@@ -74,13 +71,12 @@ class OnboardingViewController: UIViewController {
 
 extension OnboardingViewController {
     private func updateUI() {
-        // hide stack views
+    
         for stackView in [firstStackView, secondStackView, thirdStackView]{
             stackView?.isHidden = true
         }
         let totalProgress = Float(stackIndex) / Float(stackTotal)
-        
-        // set progress for progressBar
+
         progressBar.setProgress(totalProgress, animated: true)
     }
     private func setLabelFont() {

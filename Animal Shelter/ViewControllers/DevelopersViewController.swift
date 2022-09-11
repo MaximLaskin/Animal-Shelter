@@ -31,8 +31,6 @@ final class DevelopersViewController: UIViewController {
         showDev(with: currentDeveloperIndex)
     }
     
-    
-
     // MARK: - Actions
     
     @IBAction func nextButtonPressed() {
