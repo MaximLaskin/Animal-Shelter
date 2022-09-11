@@ -19,7 +19,6 @@ class OnboardingViewController: UIViewController {
     @IBOutlet var firstLabel: UILabel!
     @IBOutlet var secondLabel: UILabel!
     @IBOutlet var thirdLabel: UILabel!
-    @IBOutlet var forthLabel: UILabel!
     
     @IBOutlet var actionButton: UIButton!
     
@@ -34,14 +33,14 @@ class OnboardingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        setLabelFont()
         
         // showing firstStackView as default
         firstStackView.isHidden = false
         
-        firstLabel.text = "приветствуем тебя \(userName) 😎"
-        secondLabel.text = "Мы рады что принял такое важное решение - как усыновление животного 🥰"
-        thirdLabel.text = "Надеемся что с нашей помощью, ты найдешь друга, ведь он уже ждет тебя 🐶❤️🐱"
-        forthLabel.text = "Приступим？ ❤️"
+        firstLabel.text = "Приветствуем тебя, \(userName)"
+        secondLabel.text = "Мы рады что принял такое важное решение - как усыновление животного"
+        thirdLabel.text = "Надеемся что с нашей помощью, ты найдешь друга, ведь он уже ждет тебя"
     }
     
     // MARK: - IBActions
@@ -50,27 +49,18 @@ class OnboardingViewController: UIViewController {
         actionButton.setTitle("Continue", for: .normal)
         
         if firstStackView.isHidden == false {
-            stackIndex += 0.33
-            progressBar.setProgress(0.33, animated: true)
+            stackIndex += 0.5
+            progressBar.setProgress(0.5, animated: true)
             firstStackView.isHidden = true
             secondStackView.isHidden = false
             thirdStackView.isHidden = true
-            forthStackView.isHidden = true
         } else if secondStackView.isHidden == false {
-            stackIndex += 0.33
-            progressBar.setProgress(0.7, animated: true)
-            firstStackView.isHidden = true
-            secondStackView.isHidden = true
-            thirdStackView.isHidden = false
-            forthStackView.isHidden = true
-        } else if thirdStackView.isHidden == false {
-            stackIndex += 0.34
+            stackIndex += 0.5
             progressBar.setProgress(1, animated: true)
             firstStackView.isHidden = true
             secondStackView.isHidden = true
-            thirdStackView.isHidden = true
-            forthStackView.isHidden = false
-        } else if forthStackView.isHidden == false {
+            thirdStackView.isHidden = false
+        } else if thirdStackView.isHidden == false {
             performSegue(withIdentifier: "showNext", sender: nil)
         }
     }
@@ -81,12 +71,21 @@ class OnboardingViewController: UIViewController {
 extension OnboardingViewController {
     private func updateUI() {
         // hide stack views
-        for stackView in [firstStackView, secondStackView, thirdStackView, forthStackView]{
+        for stackView in [firstStackView, secondStackView, thirdStackView]{
             stackView?.isHidden = true
         }
         let totalProgress = Float(stackIndex) / Float(stackTotal)
         
         // set progress for progressBar
         progressBar.setProgress(totalProgress, animated: true)
+    }
+    private func setLabelFont() {
+        for label in [firstLabel, secondLabel, thirdLabel] {
+            label?.font = .systemFont(ofSize: 30)
+            label?.numberOfLines = 0
+            label?.shadowColor = .black
+            label?.shadowOffset = CGSize(width: 0.5, height: 0.5 )
+            
+        }
     }
 }
