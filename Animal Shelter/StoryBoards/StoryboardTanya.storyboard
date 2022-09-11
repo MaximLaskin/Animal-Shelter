@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Hc-uO-0bM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XH5-yu-SVY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,7 +13,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="animalsListVC" id="Jlw-yd-3PP" customClass="AnimalListViewController" customModule="Animal_Shelter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="udi-z4-axt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -79,7 +80,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXr-va-TjF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="584" y="63"/>
+            <point key="canvasLocation" x="1492.753623188406" y="62.946428571428569"/>
         </scene>
         <!--MaximStoryboard-->
         <scene sceneID="pXw-R4-euV">
@@ -89,15 +90,107 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ml9-l5-jNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1392" y="63"/>
+            <point key="canvasLocation" x="2138" y="63"/>
+        </scene>
+        <!--Choice View Controller-->
+        <scene sceneID="gTo-D7-zXj">
+            <objects>
+                <viewController id="XH5-yu-SVY" customClass="ChoiceViewController" customModule="Animal_Shelter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jVo-Yz-Xcx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какого питомца ты выберешь?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqf-sW-ix2">
+                                <rect key="frame" x="16" y="144" width="382" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="DWR-o9-f5m">
+                                <rect key="frame" x="157" y="266" width="100" height="171"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GkU-sy-IGX">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                                        <color key="backgroundColor" red="0.087760247289999996" green="0.0264453087" blue="0.19609168169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Ubw-ig-yCQ"/>
+                                            <constraint firstAttribute="height" constant="60" id="r6J-0E-ujx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Кошка">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="choiceButtonTapped:" destination="XH5-yu-SVY" eventType="touchUpInside" id="SkF-aW-2BB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="983-PY-htZ">
+                                        <rect key="frame" x="0.0" y="111" width="100" height="60"/>
+                                        <color key="backgroundColor" red="0.087760247289999996" green="0.0264453087" blue="0.19609168169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Rso-Ea-y4n"/>
+                                            <constraint firstAttribute="width" constant="100" id="nhe-pS-dhg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Собака">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="choiceButtonTapped:" destination="XH5-yu-SVY" eventType="touchUpInside" id="mWL-Pz-TKg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog_login" translatesAutoresizingMaskIntoConstraints="NO" id="GGR-5K-SSa">
+                                <rect key="frame" x="258" y="706" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="lsI-fl-Xy0"/>
+                                    <constraint firstAttribute="width" constant="120" id="rLV-ZZ-SN2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat_login" translatesAutoresizingMaskIntoConstraints="NO" id="aFj-K3-eCc">
+                                <rect key="frame" x="36" y="592" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="FEK-Yd-DW5"/>
+                                    <constraint firstAttribute="height" constant="120" id="OXr-YQ-2XP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="66s-Yx-H66"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="66s-Yx-H66" firstAttribute="trailing" secondItem="GGR-5K-SSa" secondAttribute="trailing" constant="36" id="9Lc-ek-9mP"/>
+                            <constraint firstItem="tqf-sW-ix2" firstAttribute="leading" secondItem="66s-Yx-H66" secondAttribute="leading" constant="16" id="DeD-Qq-wMK"/>
+                            <constraint firstAttribute="trailing" secondItem="tqf-sW-ix2" secondAttribute="trailing" constant="16" id="GVZ-wB-tpv"/>
+                            <constraint firstItem="DWR-o9-f5m" firstAttribute="top" secondItem="tqf-sW-ix2" secondAttribute="bottom" constant="50" id="I3H-AK-Wdg"/>
+                            <constraint firstItem="66s-Yx-H66" firstAttribute="bottom" secondItem="GGR-5K-SSa" secondAttribute="bottom" constant="36" id="UXR-aC-BC5"/>
+                            <constraint firstItem="aFj-K3-eCc" firstAttribute="leading" secondItem="66s-Yx-H66" secondAttribute="leading" constant="36" id="efA-x9-UXM"/>
+                            <constraint firstItem="66s-Yx-H66" firstAttribute="bottom" secondItem="aFj-K3-eCc" secondAttribute="bottom" constant="150" id="lWL-rg-gU9"/>
+                            <constraint firstItem="tqf-sW-ix2" firstAttribute="top" secondItem="66s-Yx-H66" secondAttribute="top" constant="100" id="p0g-PB-ndG"/>
+                            <constraint firstItem="DWR-o9-f5m" firstAttribute="centerX" secondItem="jVo-Yz-Xcx" secondAttribute="centerX" id="qSL-XS-C8K"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hhd-ze-rlQ"/>
+                    <connections>
+                        <outlet property="catButton" destination="GkU-sy-IGX" id="Mee-gs-xa4"/>
+                        <outlet property="dogButton" destination="983-PY-htZ" id="hpQ-H3-OvV"/>
+                        <segue destination="6Hc-uO-0bM" kind="presentation" identifier="showChoice" id="6P1-yy-WYI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GDo-z9-WAj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10.144927536231885" y="62.946428571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eti-Hc-EDJ">
             <objects>
                 <navigationController storyboardIdentifier="navigationVCToAnimals" automaticallyAdjustsScrollViewInsets="NO" id="6Hc-uO-0bM" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="r80-pe-Yx9"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="osK-4b-7rA">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -107,10 +200,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4P-ER-Jnx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-156.52173913043478" y="62.946428571428569"/>
+            <point key="canvasLocation" x="753.62318840579712" y="62.946428571428569"/>
         </scene>
     </scenes>
     <resources>
+        <image name="cat_login" width="564" height="564"/>
+        <image name="dog_login" width="564" height="564"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

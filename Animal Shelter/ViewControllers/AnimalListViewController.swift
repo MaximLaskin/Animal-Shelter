@@ -13,7 +13,7 @@ final class AnimalListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.backgroundColor = .white
     }
 
     // MARK: - Table view data source

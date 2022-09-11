@@ -39,7 +39,7 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="644-k3-abO" kind="presentation" identifier="cats" modalPresentationStyle="fullScreen" id="yrx-0N-OQk"/>
+                                                    <action selector="choiceButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RD8-OG-Azh"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgg-g8-sIA">
@@ -53,8 +53,8 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="choiceButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MOD-zm-EaC"/>
                                                     <action selector="dogButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bbl-bj-HxM"/>
-                                                    <segue destination="644-k3-abO" kind="presentation" identifier="dogs" modalPresentationStyle="fullScreen" id="mKm-j9-LW7"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -71,6 +71,9 @@
                             <constraint firstItem="ff8-6U-7M2" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="fqD-LD-Nvv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="644-k3-abO" kind="show" identifier="showChoice" id="XSY-Db-A97"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,15 +82,14 @@
         <!--StoryboardTanya-->
         <scene sceneID="SlF-La-YWg">
             <objects>
-                <viewControllerPlaceholder storyboardName="StoryboardTanya" id="644-k3-abO" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="animalsListVC" storyboardName="StoryboardTanya" id="644-k3-abO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2UD-n7-61a"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbU-5N-eWu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="763" y="85"/>
+            <point key="canvasLocation" x="762" y="79"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="yrx-0N-OQk"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="cat_login" width="564" height="564"/>
         <image name="dog_login" width="564" height="564"/>

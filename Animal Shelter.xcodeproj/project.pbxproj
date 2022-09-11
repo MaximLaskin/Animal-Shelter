@@ -17,6 +17,7 @@
 		43585AF828CD2ED1009EFEFA /* ChoiceOfAnimal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43585AF728CD2ED1009EFEFA /* ChoiceOfAnimal.storyboard */; };
 		43585AFA28CD33F3009EFEFA /* ChoiceOfAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43585AF928CD33F3009EFEFA /* ChoiceOfAnimalViewController.swift */; };
 		8F445B4028CB4F7D008C6363 /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F445B3F28CB4F7D008C6363 /* AnimalTableViewCell.swift */; };
+		8F69530228CDBD4400B1598E /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F69530128CDBD4400B1598E /* ChoiceViewController.swift */; };
 		8FC4346028C9091600C0D92D /* StoryboardTanya.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC4345F28C9091500C0D92D /* StoryboardTanya.storyboard */; };
 		8FF38E4728C8B6F3004B0EC0 /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */; };
 		CDC3957128C9325500B91ED6 /* UsersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3957028C9325500B91ED6 /* UsersData.swift */; };
@@ -41,6 +42,7 @@
 		43585AF728CD2ED1009EFEFA /* ChoiceOfAnimal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChoiceOfAnimal.storyboard; sourceTree = "<group>"; };
 		43585AF928CD33F3009EFEFA /* ChoiceOfAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceOfAnimalViewController.swift; sourceTree = "<group>"; };
 		8F445B3F28CB4F7D008C6363 /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
+		8F69530128CDBD4400B1598E /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
 		8FC4345F28C9091500C0D92D /* StoryboardTanya.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardTanya.storyboard; sourceTree = "<group>"; };
 		8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListViewController.swift; sourceTree = "<group>"; };
 		CDC3957028C9325500B91ED6 /* UsersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersData.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */,
+				8F69530128CDBD4400B1598E /* ChoiceViewController.swift */,
 				8F445B3F28CB4F7D008C6363 /* AnimalTableViewCell.swift */,
 				CDD8457E28C8F18800F5E166 /* LoginViewController.swift */,
 				CDC3957628CB58DC00B91ED6 /* DevelopersViewController.swift */,
@@ -236,6 +239,7 @@
 				8FF38E4728C8B6F3004B0EC0 /* AnimalListViewController.swift in Sources */,
 				8F445B4028CB4F7D008C6363 /* AnimalTableViewCell.swift in Sources */,
 				43585AFA28CD33F3009EFEFA /* ChoiceOfAnimalViewController.swift in Sources */,
+				8F69530228CDBD4400B1598E /* ChoiceViewController.swift in Sources */,
 				CDC3957528CB4A3600B91ED6 /* Developer.swift in Sources */,
 				CDD8458128C9000700F5E166 /* User.swift in Sources */,
 				CDC3957128C9325500B91ED6 /* UsersData.swift in Sources */,
@@ -384,7 +388,7 @@
 				INFOPLIST_FILE = "Animal Shelter/AppFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = ChoiceOfAnimal;
+				INFOPLIST_KEY_UIMainStoryboardFile = StoryboardTanya;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
@@ -413,7 +417,7 @@
 				INFOPLIST_FILE = "Animal Shelter/AppFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = ChoiceOfAnimal;
+				INFOPLIST_KEY_UIMainStoryboardFile = StoryboardTanya;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
