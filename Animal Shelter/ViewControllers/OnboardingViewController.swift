@@ -39,15 +39,19 @@ class OnboardingViewController: UIViewController {
         // showing firstStackView as default
         firstStackView.isHidden = false
         
-        firstLabel.text = "Приветствуем тебя, \(userName)"
-        secondLabel.text = "Мы рады что принял такое важное решение - как усыновление животного"
-        thirdLabel.text = "Надеемся, что с нашей помощью, ты найдешь друга, ведь он уже ждет тебя"
+
+        firstLabel.text = "Привет, \(userName) 😎"
+        secondLabel.text = "Рады что готов найти новго друга 🥰"
+        thirdLabel.text = "Ведь он уже ждет тебя 🐶❤️🐱"
+        forthLabel.text = "Давай приступим ❤️"
     }
     
     // MARK: - IBActions
     
     @IBAction func actionButtonPressed(_ sender: Any) {
-        actionButton.setTitle("Продолжить", for: .normal)
+
+        actionButton.setTitle("Далее", for: .normal)
+
         
         if firstStackView.isHidden == false {
             stackIndex += 0.5

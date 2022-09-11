@@ -17,7 +17,6 @@ final class DevelopersViewController: UIViewController {
     @IBOutlet var devTelegramText: UILabel!
     
     @IBOutlet var nextDevButton: UIButton!
-    @IBOutlet var goBackButton: UIButton!
 
     // MARK: - Private properties
     
@@ -31,9 +30,11 @@ final class DevelopersViewController: UIViewController {
         devPhotoImage.layer.cornerRadius = 10
         showDev(with: currentDeveloperIndex)
     }
+    
+    
 
     // MARK: - Actions
-
+    
     @IBAction func nextButtonPressed() {
         
         if currentDeveloperIndex < currentDev.count - 1 {
@@ -46,7 +47,6 @@ final class DevelopersViewController: UIViewController {
         
         if currentDeveloperIndex == currentDev.count - 1 {
             nextDevButton.isHidden = true
-            goBackButton.isHidden = false
         }
         
         devPhotoImage.image = currentDev[index].photo

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -195,8 +195,8 @@
                                     <color key="baseBackgroundColor" red="0.094117648900000003" green="0.02745098248" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="developersButtonPressed:" destination="j1M-6o-ivi" eventType="touchUpInside" id="g5e-Fq-8Ua"/>
                                     <action selector="doneButtonPressed:" destination="j1M-6o-ivi" eventType="touchUpInside" id="kLU-uv-Kl7"/>
+                                    <segue destination="qlu-Rf-Yx8" kind="presentation" identifier="toUserRoom" modalPresentationStyle="fullScreen" id="yIY-wI-zla"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zS3-CK-AIW">
@@ -217,22 +217,24 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Поздравляем!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8L-ku-pCe">
-                                <rect key="frame" x="94.5" y="62" width="186" height="32.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Поздравляем" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8L-ku-pCe">
+                                <rect key="frame" x="99" y="62" width="177.5" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFn-pt-d1k">
-                                <rect key="frame" x="117.5" y="616" width="140" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="О разработчиках"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFn-pt-d1k">
+                                <rect key="frame" x="115" y="613" width="145" height="34"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="О разработчиках">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="developersButtonPressed:" destination="j1M-6o-ivi" eventType="touchUpInside" id="Xqa-Tc-vHn"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applogo" translatesAutoresizingMaskIntoConstraints="NO" id="dPA-jk-hWf">
-                                <rect key="frame" x="134" y="574" width="107" height="37"/>
+                                <rect key="frame" x="134" y="571" width="107" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="FMS-Vy-7U8"/>
                                     <constraint firstAttribute="width" constant="107" id="kyq-Cn-d2G"/>
@@ -240,7 +242,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QXO-2T-LTM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="v9Q-cM-f53" firstAttribute="top" secondItem="zS3-CK-AIW" secondAttribute="bottom" constant="35" id="1do-ay-OYv"/>
                             <constraint firstItem="QXO-2T-LTM" firstAttribute="bottom" secondItem="tFn-pt-d1k" secondAttribute="bottom" constant="20" id="1fW-gh-lUL"/>
@@ -267,6 +269,14 @@
             </objects>
             <point key="canvasLocation" x="861.60000000000002" y="91.304347826086968"/>
         </scene>
+        <!--UserRoomStoryboard-->
+        <scene sceneID="bjC-WL-lb0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserRoomStoryboard" id="qlu-Rf-Yx8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xEj-Zu-l8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1687" y="146"/>
+        </scene>
         <!--Developers-->
         <scene sceneID="Nnu-7k-pdT">
             <objects>
@@ -275,7 +285,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7U-cj-jdq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1687" y="91"/>
+            <point key="canvasLocation" x="1635" y="-15"/>
         </scene>
     </scenes>
     <resources>
