@@ -25,7 +25,7 @@ final class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        versionLabel.text = "version \(appVersion ?? "1.0")"
+        versionLabel.text = "версия \(appVersion ?? "1.0")"
         versionLabel.alpha = 0.4
         
         loginTextField.setupLeftImage(imageName: "User")
@@ -41,8 +41,8 @@ final class LoginViewController: UIViewController {
     
     @IBAction func forgotUsernameButtonPressed() {
         showAlert(
-            with: "👋 No worries",
-            and: "Your login is \(currentUser?.username ?? "")"
+            with: "👋 Не переживайте",
+            and: "Ваш логин \(currentUser?.username ?? "")"
         )
         
         loginTextField.text = currentUser?.username ?? ""
@@ -50,8 +50,8 @@ final class LoginViewController: UIViewController {
     
     @IBAction func forgoPasswordButtonPressed() {
         showAlert(
-            with: "🔐 Password",
-            and: "Password for user \(currentUser?.username ?? "") is \(currentUser?.password ?? "")"
+            with: "🔐 Пароль",
+            and: "Пароль для пользователя \(currentUser?.username ?? "") - \(currentUser?.password ?? "")"
         )
     }
     
@@ -73,7 +73,7 @@ final class LoginViewController: UIViewController {
         if loginTextField.text == currentUser?.username ?? "Sam" && passwordTextField.text == currentUser?.password ?? "3333"  {
             return true
         } else {
-            showAlert(with: "🥺 Wrong Credentials", and: "Please check login and password")
+            showAlert(with: "🥺 Что-то не так", and: "Проверьте логин и пароль")
             return false
         }
     }
@@ -88,7 +88,7 @@ extension LoginViewController {
             message: massage,
             preferredStyle: .alert)
 
-        let okAction = UIAlertAction(title: "Done", style: .default) { _ in
+        let okAction = UIAlertAction(title: "Готово", style: .default) { _ in
             self.passwordTextField.text = ""
         }
 

@@ -36,10 +36,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1F-3Z-Rgo">
-                                <rect key="frame" x="134.5" y="575" width="106" height="37"/>
+                                <rect key="frame" x="146" y="575" width="83" height="37"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Login"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Next Dev">
+                                <buttonConfiguration key="configuration" style="filled" title="Далее">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
                                     <color key="baseBackgroundColor" red="0.094117648900000003" green="0.02745098248" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
@@ -63,10 +63,10 @@
                                 </subviews>
                             </stackView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRB-ed-PSn">
-                                <rect key="frame" x="138.5" y="575" width="98" height="37"/>
+                                <rect key="frame" x="134.5" y="575" width="106" height="37"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Login"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Go back">
+                                <buttonConfiguration key="configuration" style="filled" title="Обратно">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
                                     <color key="baseBackgroundColor" red="0.094117648900000003" green="0.02745098248" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
