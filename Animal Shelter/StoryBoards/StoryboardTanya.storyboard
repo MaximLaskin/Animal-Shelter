@@ -188,9 +188,10 @@
             <objects>
                 <navigationController storyboardIdentifier="navigationVCToAnimals" automaticallyAdjustsScrollViewInsets="NO" id="6Hc-uO-0bM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="r80-pe-Yx9"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="osK-4b-7rA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="osK-4b-7rA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
