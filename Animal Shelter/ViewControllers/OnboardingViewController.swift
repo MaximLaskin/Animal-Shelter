@@ -40,13 +40,13 @@ class OnboardingViewController: UIViewController {
         
         firstLabel.text = "Приветствуем тебя, \(userName)"
         secondLabel.text = "Мы рады что принял такое важное решение - как усыновление животного"
-        thirdLabel.text = "Надеемся что с нашей помощью, ты найдешь друга, ведь он уже ждет тебя"
+        thirdLabel.text = "Надеемся, что с нашей помощью, ты найдешь друга, ведь он уже ждет тебя"
     }
     
     // MARK: - IBActions
     
     @IBAction func actionButtonPressed(_ sender: Any) {
-        actionButton.setTitle("Continue", for: .normal)
+        actionButton.setTitle("Продолжить", for: .normal)
         
         if firstStackView.isHidden == false {
             stackIndex += 0.5
@@ -81,11 +81,10 @@ extension OnboardingViewController {
     }
     private func setLabelFont() {
         for label in [firstLabel, secondLabel, thirdLabel] {
-            label?.font = .systemFont(ofSize: 30)
             label?.numberOfLines = 0
             label?.shadowColor = .black
-            label?.shadowOffset = CGSize(width: 0.5, height: 0.5 )
-            
+            label?.shadowOffset = CGSize(width: 0.3, height: 0.3 )
+            label?.textColor = .darkGray
         }
     }
 }
