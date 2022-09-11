@@ -27,7 +27,13 @@ final class SuccessfulOrderViewController: UIViewController {
 
         congratulationLabel.text = "Вы приютили \(animal.name)"
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let userRoomVC = segue.destination as? UserRoomViewController else { return }
+           userRoomVC.animal = animal
+    
+    }
+    
     // MARK: - IBAction
     
     @IBAction func developersButtonPressed(_ sender: UIButton) {
@@ -36,4 +42,6 @@ final class SuccessfulOrderViewController: UIViewController {
 
     @IBAction func doneButtonPressed(_ sender: UIButton) {
     }
+    
+
 }

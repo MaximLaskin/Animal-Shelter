@@ -8,6 +8,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--StoryboardTanya-->
+        <scene sceneID="sOG-BL-zjQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StoryboardTanya" id="lHE-lG-UIC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Lf-39-ajR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-686" y="305"/>
+        </scene>
         <!--User Room View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
@@ -53,7 +61,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="sPa-jG-7xu">
-                                <rect key="frame" x="16" y="650" width="382" height="62"/>
+                                <rect key="frame" x="16" y="720" width="382" height="62"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cus-6o-d4j">
                                         <rect key="frame" x="0.0" y="0.0" width="159" height="62"/>
@@ -69,6 +77,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="orderMore" destination="Y6W-OH-hqX" eventType="touchUpInside" id="NkI-98-wcc"/>
+                                            <segue destination="lHE-lG-UIC" kind="presentation" identifier="OrderMore" id="Dag-yC-tCd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13w-Dj-6IK">
@@ -91,7 +100,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sPa-jG-7xu" secondAttribute="trailing" constant="16" id="55E-T1-tMi"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="sPa-jG-7xu" secondAttribute="bottom" constant="150" id="7Jr-dD-tRm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="sPa-jG-7xu" secondAttribute="bottom" constant="80" id="7Jr-dD-tRm"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WH6-y7-6bK" secondAttribute="trailing" constant="16" id="cTu-xY-FYS"/>
                             <constraint firstItem="sPa-jG-7xu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="rAL-Ze-Z06"/>
                             <constraint firstItem="WH6-y7-6bK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="rXV-AK-5xg"/>

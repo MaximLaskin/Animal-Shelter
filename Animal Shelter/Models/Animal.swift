@@ -8,6 +8,8 @@
 import Foundation
 
 struct Animal {
+    
+    let animalType: AnimalType  // тип животного
     let name: String // кличка
     let age: String // возраст
 
@@ -20,20 +22,28 @@ struct Animal {
     var nameAndBreed: String { // имя и порода для названия ячейки
         "\(name) - \(breed)"
     }
+    
+    enum AnimalType: String {
+        case dog = "собака"
+        case cat = "кошка"
+    }
 }
 
 extension Animal {
     static func getDogsList() -> [Animal] {
         [
             Animal(
+                animalType: AnimalType.dog,
                 name: "Норман",
                 age: "2 года",
                 breed: "Австралийский Келпи",
                 sex: "Мальчик",
                 weight: "4 кг",
-                description: "Очень дружелюбный, молодой пес. Очень нуждается в любящей семье."),
+                description: "Очень дружелюбный, молодой пес. Очень нуждается в любящей семье." ),
+            
 
             Animal(
+                animalType: AnimalType.dog,
                 name: "Элен",
                 age: "8 месяцев",
                 breed: "Шпиц",
@@ -42,6 +52,7 @@ extension Animal {
                 description: "Очень ласковая и нежная, любит сидеть на ручках"),
 
             Animal(
+                animalType: AnimalType.dog,
                 name: "Альберт",
                 age: "4 года",
                 breed: "Ротвейлер",
@@ -50,6 +61,7 @@ extension Animal {
                 description: "Добрый, очень умный. Умеет ладить с детьми."),
 
             Animal(
+                animalType: AnimalType.dog,
                 name: "Рокси",
                 age: "3 года",
                 breed: "Доберман",
@@ -58,6 +70,7 @@ extension Animal {
                 description: "Рокси ищет любящую семью. Умная, знает несколько команд."),
 
             Animal(
+                animalType: AnimalType.dog,
                 name: "Пинки",
                 age: "2 года",
                 breed: "Такса",
@@ -70,6 +83,7 @@ extension Animal {
     static func getCatsList() -> [Animal] {
         [
             Animal(
+                animalType: AnimalType.cat,
                 name: "Мэри",
                 age: "2 года",
                 breed: "Британская длинношерстная",
@@ -78,6 +92,7 @@ extension Animal {
                 description: "Ласковая и умная кошечка ищет дом. "),
 
             Animal(
+                animalType: AnimalType.cat,
                 name: "Скарлетт",
                 age: "2 года",
                 breed: "Британская короткошерстная",
@@ -86,6 +101,7 @@ extension Animal {
                 description: "Очень игручая кошечка ищет любящую семью"),
 
             Animal(
+                animalType: AnimalType.cat,
                 name: "Габи",
                 age: "1,5 года",
                 breed: "Манчкин",
@@ -94,6 +110,7 @@ extension Animal {
                 description: "Очень милый и добрый котик с короткими лапками"),
 
             Animal(
+                animalType: AnimalType.cat,
                 name: "Маркиза",
                 age: "6 лет",
                 breed: "Персидская",
@@ -102,6 +119,7 @@ extension Animal {
                 description: "Взрослая кошечка ищет дом. Очень красивая и умная"),
 
             Animal(
+                animalType: AnimalType.cat,
                 name: "Афина",
                 age: "3 месяца",
                 breed: "Невская Маскарадная",

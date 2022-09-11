@@ -14,17 +14,33 @@ class UserRoomViewController: UIViewController {
     @IBOutlet var dogsOrderLabel: UILabel!
     @IBOutlet var catsOrderLabel: UILabel!
     
+    var userImageURVC: UIImage!
+    var userNameURVC: String!
+    var dogsOrderURVC: String!
+    var catsOrderURVC: String!
+    
+    var animal: Animal!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        userNameLabel.text = userNameURVC
+        setAnimalLabel()
 
         // Do any additional setup after loading the view.
+    }
+    
+    private func setAnimalLabel() {
+        if animal.animalType == Animal.AnimalType.dog {
+            dogsOrderLabel.text = "Твой новый друг: \(animal.breed) \(animal.name)"
+        } else {
+            catsOrderLabel.text = "Твой новый друг: \(animal.breed) \(animal.name)"
+        }
     }
     
 
     
     @IBAction func orderMore() {
+        
     }
     
 

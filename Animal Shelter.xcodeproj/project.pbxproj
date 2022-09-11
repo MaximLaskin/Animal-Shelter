@@ -124,15 +124,15 @@
 		43E32E0628CA668500A753A8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A614EF0C28CE58CC0097D032 /* UserRoomViewController.swift */,
 				8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */,
 				8F69530128CDBD4400B1598E /* ChoiceViewController.swift */,
 				8F445B3F28CB4F7D008C6363 /* AnimalTableViewCell.swift */,
 				CDD8457E28C8F18800F5E166 /* LoginViewController.swift */,
-				CDC3957628CB58DC00B91ED6 /* DevelopersViewController.swift */,
 				9BAC2AEA28CDECD90076BF33 /* OnboardingViewController.swift */,
 				4312DF7B28C8DF7D00EB804C /* AnimalDetailsViewController.swift */,
 				43C8260228CDEE4700BFE83F /* SuccessfulOrderViewController.swift */,
+				CDC3957628CB58DC00B91ED6 /* DevelopersViewController.swift */,
+				A614EF0C28CE58CC0097D032 /* UserRoomViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

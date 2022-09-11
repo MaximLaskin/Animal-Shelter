@@ -65,7 +65,7 @@ final class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     //    guard let user = currentUser else { return }
-        
+     
     //   let destinationVC = segue.destination as! SecondViewController
     }
     
