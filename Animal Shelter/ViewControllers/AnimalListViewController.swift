@@ -10,6 +10,8 @@ import UIKit
 final class AnimalListViewController: UITableViewController {
 
     var animals: [Animal]!
+
+    // MARK: - Life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
