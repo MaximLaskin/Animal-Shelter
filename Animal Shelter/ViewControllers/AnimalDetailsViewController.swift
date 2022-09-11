@@ -58,4 +58,10 @@ final class AnimalDetailsViewController: UIViewController {
         [weightView, sexView, ageView].forEach{$0.layer.borderWidth = 1}
         [weightView, sexView, ageView].forEach{$0.layer.borderColor = UIColor.gray.cgColor}
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let successVC = segue.destination as? SuccessfulOrderViewController else { return }
+        successVC.animal = animal
+
+    }
 }
