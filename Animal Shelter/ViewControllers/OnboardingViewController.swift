@@ -29,6 +29,7 @@ class OnboardingViewController: UIViewController {
     private var stackTotal: Float = 3.0 // count of stack Views
     var userName = ""
     
+    
     // MARK: - Live Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
