@@ -22,6 +22,8 @@
 		8FF38E4728C8B6F3004B0EC0 /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */; };
 		9BAC2AE928CDECC00076BF33 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC2AE828CDECC00076BF33 /* Onboarding.storyboard */; };
 		9BAC2AEB28CDECD90076BF33 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC2AEA28CDECD90076BF33 /* OnboardingViewController.swift */; };
+		A614EF0B28CE58850097D032 /* UserRoomStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A614EF0A28CE58850097D032 /* UserRoomStoryboard.storyboard */; };
+		A614EF0D28CE58CC0097D032 /* UserRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A614EF0C28CE58CC0097D032 /* UserRoomViewController.swift */; };
 		CDC3957128C9325500B91ED6 /* UsersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3957028C9325500B91ED6 /* UsersData.swift */; };
 		CDC3957328CB4A0600B91ED6 /* Developers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC3957228CB4A0600B91ED6 /* Developers.storyboard */; };
 		CDC3957528CB4A3600B91ED6 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3957428CB4A3600B91ED6 /* Developer.swift */; };
@@ -49,6 +51,8 @@
 		8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListViewController.swift; sourceTree = "<group>"; };
 		9BAC2AE828CDECC00076BF33 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		9BAC2AEA28CDECD90076BF33 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		A614EF0A28CE58850097D032 /* UserRoomStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserRoomStoryboard.storyboard; sourceTree = "<group>"; };
+		A614EF0C28CE58CC0097D032 /* UserRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserRoomViewController.swift; path = "Animal Shelter/StoryBoards/UserRoomViewController.swift"; sourceTree = SOURCE_ROOT; };
 		CDC3957028C9325500B91ED6 /* UsersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersData.swift; sourceTree = "<group>"; };
 		CDC3957228CB4A0600B91ED6 /* Developers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Developers.storyboard; sourceTree = "<group>"; };
 		CDC3957428CB4A3600B91ED6 /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 		43E32E0628CA668500A753A8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A614EF0C28CE58CC0097D032 /* UserRoomViewController.swift */,
 				8FF38E4628C8B6F3004B0EC0 /* AnimalListViewController.swift */,
 				8F69530128CDBD4400B1598E /* ChoiceViewController.swift */,
 				8F445B3F28CB4F7D008C6363 /* AnimalTableViewCell.swift */,
@@ -138,6 +143,7 @@
 				8FC4345F28C9091500C0D92D /* StoryboardTanya.storyboard */,
 				CDD8457A28C8B50900F5E166 /* Login.storyboard */,
 				CDC3957228CB4A0600B91ED6 /* Developers.storyboard */,
+				A614EF0A28CE58850097D032 /* UserRoomStoryboard.storyboard */,
 				4312DF7928C8DED800EB804C /* MaximStoryboard.storyboard */,
 				9BAC2AE828CDECC00076BF33 /* Onboarding.storyboard */,
 				4346F05E28C78B49004087E2 /* LaunchScreen.storyboard */,
@@ -230,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDD8457B28C8B50900F5E166 /* Login.storyboard in Resources */,
+				A614EF0B28CE58850097D032 /* UserRoomStoryboard.storyboard in Resources */,
 				4346F06028C78B49004087E2 /* LaunchScreen.storyboard in Resources */,
 				CDC3957328CB4A0600B91ED6 /* Developers.storyboard in Resources */,
 				4346F05D28C78B49004087E2 /* Assets.xcassets in Resources */,
@@ -248,6 +255,7 @@
 			files = (
 				9BAC2AEB28CDECD90076BF33 /* OnboardingViewController.swift in Sources */,
 				CDD8457F28C8F18800F5E166 /* LoginViewController.swift in Sources */,
+				A614EF0D28CE58CC0097D032 /* UserRoomViewController.swift in Sources */,
 				CDC3957728CB58DC00B91ED6 /* DevelopersViewController.swift in Sources */,
 				4312DF7828C8AD4300EB804C /* Animal.swift in Sources */,
 				43C8260328CDEE4700BFE83F /* SuccessfulOrderViewController.swift in Sources */,
