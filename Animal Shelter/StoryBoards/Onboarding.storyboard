@@ -138,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="944.79999999999995" y="97.601199400299862"/>
         </scene>
-        <!--StoryboardTanya-->
+        <!--AnimalList-->
         <scene sceneID="cas-X3-ljJ">
             <objects>
-                <viewControllerPlaceholder storyboardName="StoryboardTanya" id="eKK-qj-VOR" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="AnimalList" id="eKK-qj-VOR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jBh-Zg-8k3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1810" y="97"/>

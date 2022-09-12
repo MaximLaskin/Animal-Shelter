@@ -42,6 +42,8 @@ final class UserRoomViewController: UIViewController {
     // MARK: - Setup
 
     private func setupView() {
+        view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        
         userNameLabel.text = userNameURVC
         setAnimalLabel()
         dogsOrderLabel.text = dogsOrderURVC

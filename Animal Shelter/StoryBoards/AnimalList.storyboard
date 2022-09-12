@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="1492.753623188406" y="62.946428571428569"/>
         </scene>
-        <!--MaximStoryboard-->
+        <!--AnimalDetails-->
         <scene sceneID="pXw-R4-euV">
             <objects>
-                <viewControllerPlaceholder storyboardName="MaximStoryboard" id="kbr-77-pE7" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="AnimalDetails" id="kbr-77-pE7" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="MYF-fI-ssZ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ml9-l5-jNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
