@@ -21,7 +21,6 @@ final class SuccessfulOrderViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.backgroundColor = #colorLiteral(red: 1, green: 0.7176906918, blue: 0.699740553, alpha: 1)
 
         imageView.image = UIImage(named: animal.nameAndBreed)
         imageView.layer.cornerRadius = imageView.bounds.height / 2
@@ -44,6 +43,4 @@ final class SuccessfulOrderViewController: UIViewController {
 
     @IBAction func doneButtonPressed(_ sender: UIButton) {
     }
-    
-
 }
