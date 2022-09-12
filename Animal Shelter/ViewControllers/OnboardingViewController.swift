@@ -38,9 +38,9 @@ class OnboardingViewController: UIViewController {
 
         firstStackView.isHidden = false
 
-        firstLabel.text = "Привет, \(userName) 😎"
-        secondLabel.text = "Рады что готов найти новго друга 🥰"
-        thirdLabel.text = "Ведь он уже ждет тебя 🐶❤️🐱"
+        firstLabel.text = "Привет, \(userName)"
+        secondLabel.text = "Рады, что готов найти нового друга"
+        thirdLabel.text = "Ведь он уже ждет тебя"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
