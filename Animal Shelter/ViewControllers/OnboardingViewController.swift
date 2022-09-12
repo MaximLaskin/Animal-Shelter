@@ -40,10 +40,9 @@ class OnboardingViewController: UIViewController {
         firstStackView.isHidden = false
         
 
-        firstLabel.text = "Привет, \(userName) 😎"
-        secondLabel.text = "Рады что готов найти новго друга 🥰"
-        thirdLabel.text = "Ведь он уже ждет тебя 🐶❤️🐱"
-        forthLabel.text = "Давай приступим ❤️"
+        firstLabel.text = "Привет, \(userName)"
+        secondLabel.text = "Рады, что готов найти нового друга"
+        thirdLabel.text = "Ведь он уже ждет тебя"
     }
     
     // MARK: - IBActions
@@ -87,9 +86,10 @@ extension OnboardingViewController {
     private func setLabelFont() {
         for label in [firstLabel, secondLabel, thirdLabel] {
             label?.numberOfLines = 0
-            label?.shadowColor = .black
+            label?.shadowColor = .darkGray
             label?.shadowOffset = CGSize(width: 0.3, height: 0.3 )
             label?.textColor = .darkGray
+
         }
     }
 }
