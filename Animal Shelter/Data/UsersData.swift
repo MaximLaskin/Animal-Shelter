@@ -38,7 +38,7 @@ class DevsDataManager {
     ]
     
     let devTelegrams = [
-        "@maximlaskin", "@Pavel_Sh", "@tatyanaKosMe", "@whereismyteaBITCH", "@kurwakotek"
+        "@maximlaskin", "@Pavel_Sh", "@tatyanaKosMe", "@whereismytea", "@kurwakotek"
     ]
     
     let devPhotos =

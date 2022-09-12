@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="WH6-y7-6bK">
-                                <rect key="frame" x="16" y="50" width="343" height="430"/>
+                                <rect key="frame" x="16" y="50" width="343" height="418"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RRP-zm-7UZ">
                                         <rect key="frame" x="46.5" y="0.0" width="250" height="250"/>
@@ -41,21 +41,21 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Собачки" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVb-Yf-2hs">
-                                        <rect key="frame" x="123.5" y="340" width="96.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="132.5" y="340" width="78.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                        <color key="textColor" red="0.098039209840000002" green="0.035294115539999997" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кошечки" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ary-e6-9Nu">
-                                        <rect key="frame" x="122" y="400" width="99" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="131" y="394" width="81" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                        <color key="textColor" red="0.098039209840000002" green="0.035294115539999997" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="sPa-jG-7xu">
-                                <rect key="frame" x="16" y="549" width="343" height="38"/>
+                                <rect key="frame" x="16" y="518" width="343" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cus-6o-d4j">
                                         <rect key="frame" x="0.0" y="0.0" width="196.5" height="38"/>
@@ -95,7 +95,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sPa-jG-7xu" secondAttribute="trailing" constant="16" id="55E-T1-tMi"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="sPa-jG-7xu" secondAttribute="bottom" constant="80" id="7Jr-dD-tRm"/>
+                            <constraint firstItem="sPa-jG-7xu" firstAttribute="top" secondItem="WH6-y7-6bK" secondAttribute="bottom" constant="50" id="bfI-OE-Fzq"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WH6-y7-6bK" secondAttribute="trailing" constant="16" id="cTu-xY-FYS"/>
                             <constraint firstItem="sPa-jG-7xu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="rAL-Ze-Z06"/>
                             <constraint firstItem="WH6-y7-6bK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="rXV-AK-5xg"/>
