@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--StoryboardTanya-->
+        <!--AnimalList-->
         <scene sceneID="sOG-BL-zjQ">
             <objects>
-                <viewControllerPlaceholder storyboardName="StoryboardTanya" id="lHE-lG-UIC" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="AnimalList" id="lHE-lG-UIC" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Lf-39-ajR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="35" y="538"/>
