@@ -56,7 +56,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YyW-iY-8kL" userLabel="Second Stack View">
-                                <rect key="frame" x="20" y="120" width="335" height="473"/>
+                                <rect key="frame" x="20" y="120" width="335" height="470"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="MYQ-7X-byF">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="413"/>
@@ -64,8 +64,8 @@
                                             <constraint firstAttribute="width" secondItem="MYQ-7X-byF" secondAttribute="height" multiplier="335:413" id="tlj-B8-zJn"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рады, что готов найти нового друга" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upy-AL-8Zs">
-                                        <rect key="frame" x="0.0" y="413" width="335" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="secondLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upy-AL-8Zs">
+                                        <rect key="frame" x="0.0" y="413" width="335" height="57"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="37" id="qd8-t6-g2c"/>
                                         </constraints>
