@@ -49,8 +49,6 @@ class OnboardingViewController: UIViewController {
     
     @IBAction func actionButtonPressed(_ sender: Any) {
 
-        actionButton.setTitle("Далее", for: .normal)
-
         
         if firstStackView.isHidden == false {
             stackIndex += 0.5
