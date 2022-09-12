@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OnboardingViewController: UIViewController {
+final class OnboardingViewController: UIViewController {
     
     // MARK: - IBOutlets
     
@@ -23,14 +23,15 @@ class OnboardingViewController: UIViewController {
     @IBOutlet var actionButton: UIButton!
     
     @IBOutlet var progressBar: UIProgressView!
+
     // MARK: - Private Properties
     
     private var stackIndex: Float = 0.0 // index of current stack
     private var stackTotal: Float = 3.0 // count of stack Views
     var userName = ""
-    
-    
+
     // MARK: - Live Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
@@ -51,8 +52,6 @@ class OnboardingViewController: UIViewController {
     // MARK: - IBActions
     
     @IBAction func actionButtonPressed(_ sender: Any) {
-
-        actionButton.setTitle("Далее", for: .normal)
 
         if firstStackView.isHidden == false {
             stackIndex += 0.5

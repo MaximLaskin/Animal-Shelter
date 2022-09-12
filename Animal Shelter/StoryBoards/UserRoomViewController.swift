@@ -7,7 +7,9 @@
 
 import UIKit
 
-class UserRoomViewController: UIViewController {
+final class UserRoomViewController: UIViewController {
+
+    // MARK: - IBOutlets
 
     @IBOutlet var userImage: UIImageView!
     @IBOutlet var userNameLabel: UILabel!
@@ -22,9 +24,24 @@ class UserRoomViewController: UIViewController {
     
     var animal: Animal!
     var users = Developer.getDevelopers()
+
+    // MARK: - Life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+    }
+
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let choiseVC = segue.destination as? ChoiceViewController else { return }
+        choiseVC.userName = userName
+    }
+
+    // MARK: - Setup
+
+    private func setupView() {
         userNameLabel.text = userNameURVC
         setAnimalLabel()
         dogsOrderLabel.text = dogsOrderURVC
@@ -32,15 +49,8 @@ class UserRoomViewController: UIViewController {
         userNameLabel.text = "Хозяин: " + userName
         setUserImage()
         userImage.layer.cornerRadius = 10
+    }
 
-        // Do any additional setup after loading the view.
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let choiseVC = segue.destination as? ChoiceViewController else { return }
-        choiseVC.userName = userName
-    }
-    
     private func setAnimalLabel() {
         if animal.animalType == Animal.AnimalType.dog {
             dogsOrderURVC = "Твой новый друг: \(animal.breed) \(animal.name)"
@@ -56,13 +66,12 @@ class UserRoomViewController: UIViewController {
             }
         }
     }
-     
+
+    // MARK: - IBAction
 
     @IBAction func orderMore() {
     }
-    
 
     @IBAction func payAndExit() {
     }
-    
 }
