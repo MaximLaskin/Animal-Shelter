@@ -71,7 +71,7 @@ final class OnboardingViewController: UIViewController {
     }
 }
     
-// MARK: - Extinsions
+// MARK: - Extensions
 
 extension OnboardingViewController {
     private func updateUI() {
