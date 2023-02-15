@@ -5,7 +5,6 @@
 //  Created by Leon Fridman on 9/7/22.
 //
 
-import Foundation
 import UIKit
 
 class UsersDataManager

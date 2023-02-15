@@ -8,6 +8,7 @@
 import UIKit
 
 final class AnimalListViewController: UITableViewController {
+    // MARK: - Properties
 
     var animals: [Animal]!
     var userName: String!

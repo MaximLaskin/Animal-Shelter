@@ -39,7 +39,7 @@ final class UserRoomViewController: UIViewController {
         choiseVC.userName = userName
     }
 
-    // MARK: - Setup
+    // MARK: - Setup View
 
     private func setupView() {
         view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
@@ -67,13 +67,5 @@ final class UserRoomViewController: UIViewController {
                 userImage.image = user.photo
             }
         }
-    }
-
-    // MARK: - IBAction
-
-    @IBAction func orderMore() {
-    }
-
-    @IBAction func payAndExit() {
     }
 }

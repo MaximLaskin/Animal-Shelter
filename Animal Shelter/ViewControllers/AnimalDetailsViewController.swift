@@ -26,6 +26,8 @@ final class AnimalDetailsViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var shelterButton: UIButton!
 
+    // MARK: - Properties
+    
     var animal: Animal!
     var userName: String!
 

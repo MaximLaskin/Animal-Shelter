@@ -27,6 +27,8 @@ final class SuccessfulOrderViewController: UIViewController {
 
         congratulationLabel.text = "Вы приютили \(animal.name)"
     }
+
+    // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let userRoomVC = segue.destination as? UserRoomViewController else { return }

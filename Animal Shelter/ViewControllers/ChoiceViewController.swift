@@ -8,12 +8,13 @@
 import UIKit
 
 final class ChoiceViewController: UIViewController {
-
     // MARK: - IBOutlets
 
     @IBOutlet var catButton: UIButton!
     @IBOutlet var dogButton: UIButton!
-    
+
+    // MARK: - Properties
+
     var animals = [Animal]()
     var userName: String!
 
