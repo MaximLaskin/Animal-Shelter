@@ -9,9 +9,7 @@ Label с версией приложения с помощью Bundle.main.infoD
 
 ![FirstScreen](https://user-images.githubusercontent.com/107308461/219015577-e1388e7e-21de-424b-b51b-0db3c80cab5c.gif)
 
-
-
-
-
+## Экран Welcome
+Экран приветствия со скрытым Stac kView и ProgressBar. 
 
 ![Second screen](https://user-images.githubusercontent.com/107308461/219004634-0c000edf-cc21-46ff-a1ed-680c573617de.gif)
